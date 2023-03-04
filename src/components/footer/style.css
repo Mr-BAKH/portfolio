@@ -1,0 +1,87 @@
+.footer{
+    width: 100%;
+    height: 50vh;
+    padding: 50px 20px;
+    border-top: 10px solid red;
+}
+.footerConainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.left{
+    padding: 10px;
+    flex: 2;
+    height: 100%;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    overflow: hidden;
+}
+.center{
+    flex:7;
+    border-radius: 10px;
+    height: 100%;
+    padding: 10px;
+}
+
+.grouIcon{
+    font-size: 40px !important;
+}
+.formInputs{
+    display: flex;
+    align-items: start; 
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.inputs{
+    height: 4vh;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+}
+.inputs:focus{
+    outline: none;
+    background-color: #edebed !important;
+    color: #211f21;
+}
+
+
+.customer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    flex:3;
+} 
+
+.discription{
+    flex: 8;
+    height: 100%;
+}
+.buttonStyle{
+    width: 40%;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.buttonStyle:hover{
+    background: #ca6a28 !important;
+}
+
+.submitText{
+    font-size: 25px;
+    font-weight: 900;
+}

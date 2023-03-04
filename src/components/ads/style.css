@@ -1,0 +1,28 @@
+
+.adsContainer{
+    margin: 10vh 0;
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+    opacity: 0.4;
+    filter: saturate(0);
+
+}
+
+.adsWrapper{
+    margin-left: -100vw;
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    animation: ads 15s infinite forwards linear;
+}
+
+.adsImg{
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
