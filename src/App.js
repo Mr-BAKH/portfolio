@@ -5,6 +5,7 @@ import Ads from "./components/ads/index"
 import Certificate from "./components/certificate/index";
 import Comment from "./components/comment/index";
 import React from 'react';
+import Img from "./components/image/index";
 
 import {token} from './them'
 
@@ -21,6 +22,7 @@ function App() {
       <Comment/>
       <Ads/>
       <Footersite/>
+      {/* <Img/> */}
       {/* <GSAP/> */}
     </div>
 

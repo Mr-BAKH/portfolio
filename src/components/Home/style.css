@@ -1,6 +1,8 @@
 
 .mainhomePage{
     width: 100%;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .header{
@@ -9,7 +11,7 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 5vh;
+    height: 5%;
     font-weight: 900;
     overflow: hidden;
 }
@@ -59,52 +61,32 @@
 }
 
 .mainPortfolio{
-    opacity: 0;
+    /* opacity: 0; */
     width: 100%;
-    height: 90vh;
+    height: 95%;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    align-items: end;
+    justify-content: start;
+    padding-left: 7%;
+    overflow: hidden;
     animation: wellcome 1s 1 0.2s ease-out forwards;
 }
 
-.imgbox{
-    border-radius: 10px;
-    min-width: 100px;
-    width: 35%;
-    height: 90%;
-    margin-right: 20px;
-    background-image: url('../../assets/photo/imgBAKH.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-shadow: -5px 5px 10px #162728;
-}
-
 .description{
-
+    /* opacity: 0; */
     display:flex;
     flex-direction: column;
     width: 30%;
     height: 50;
-}
-
-.expandMore{
-    display: block;
-    width: 100%;
-    text-align: center;
-    animation: updown .5s infinite alternate both;
-}
-
-.expandMore:hover{
-    cursor: pointer;
+    margin-bottom: 50vh;
+    padding: 10px;
+    margin-right: 70px;
+    position: absolute;
+    z-index: 1;
+    right: 18%;
+    top: 135vh;
+    animation: sayHellow 2s 3s 1 forwards ease;
 }
 
 
-ul{
-    margin: 0;
-    padding-top: 10px;
-    list-style: none;
-    font-weight: 600;
-}

@@ -1,15 +1,19 @@
 import './style.css'
 import {token} from '../../them'
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 
 const Certificate =(props)=>{
     const color =  token;
     return(
-        <div className='certificate' style={{background: color.blue[500]}}>
-            <a style={{background: color.gray[100],color:color.blue[700],fontSize:'20px',fontWeight:'900',textDecoration:'none'}} href={props.url}>
-                <div className='imageBox11' style={{ backgroundImage:`url(${props.img})`}}></div>
-            </a>
-    </div>
+        <div className='certificate'
+            style={{
+                background: color.blue[300],
+            }}
+        >
+           <a style={{ color: color.gray[900]}} className='showmore' href={props.url}>More<ExpandMoreIcon style={{fontSize:'25px'}}/></a>
+           <img src={props.img} className='imageCertificate'/>
+        </div>
     )
 }
 
@@ -18,7 +22,7 @@ const App =()=>{
  const color = token;
     return(
         <div style={{ width: '100%',marginBottom:"20px"}} id="certificate">
-                <h1 style={{padding: '10px',width:'99%',margin:'10px auto 10px auto',textAlign:'center', color: color.blue[600], border:`2px solid ${color.blue[500]}`, borderRadius:'10px', boxShadow:`0 0 5px ${color.blue[500]}`}}>Certificates</h1>
+                <h1 style={{margin:'10px auto 10px auto',textAlign:'center', color: color.blue[600],}}>Certificates</h1>
                 <div style={{padding:'1vh 10px', overflowX:'scroll'}}>
                     <div className='certificateWrapper'>
                         <Certificate 

@@ -13,32 +13,29 @@ const Proj = (props)=>{
     return(
 
         <div className='proj'>
-                <div className='headerBox'>
-                    <div className='iconProj'
-                        style={{
-                            color: color.gray[900],
-                            background: color.orange[100]
-                        }}
-                    >
-                        <FavoriteIcon className='projIcon'/>
-                        <ChatIcon className='projIcon'/>
-                        <ExpandMoreIcon className='projIcon'/>
-                    </div>
-                    <div className='details'
-                        style={{
-                            color: color.gray[900],
-                            background : color.blue[100]
-                        }}
-                    >
-                        <h2 style={{ fontWeight: 'bolder', fontSize: '25px'}}>{props.title}</h2>
-                        <h5 style={{ fontWeight: '400', fontSize: '16px'}}>{props.date}</h5>
-                        <StarCreator/>
-                    </div>
+            <div className="imageBox"
+                style={{backgroundImage:`url(${props.url})`}}
+            ></div>
+            <div className="detailBox">
+                <div className="detailleft"
+                    style={{
+                        color: color.gray[200]
+                    }}
+                >
+                    <h2>{props.title}</h2>
+                    <h5>{props.date}</h5>
+                    <StarCreator/>
                 </div>
-                <img src={props.url} className="projImg"alt='image'/>
-              </div>
-    )
-}
+                <div className="detailright">
+                    <ExpandMoreIcon/>
+                    <ChatIcon/>
+                    <FavoriteIcon/>
+                </div>
+
+            </div>
+        </div>
+    );
+};
 
 const StarCreator = (props) => {
     return(
@@ -59,10 +56,7 @@ const App =()=>{
                 color: color.blue[100]
             }}
         >
-            <div style={{width: '100%',padding:'10px', display: 'flex'}}>
-                
-                <h1 style={{padding: '10px',width:'99%',margin:'10px auto 10px auto',textAlign:'center', color: color.blue[500], border:`2px solid ${color.blue[500]}`, borderRadius:'10px', boxShadow:`0 0 5px ${color.blue[500]}`}}>Project</h1>
-            </div>
+            <span style={{position:'absolute',top:'10px',left:'20px',fontSize:'40px',color:color.gray[100]}}>Project</span>
             <div className='boxWrapper'>
                 <div className="projectsWrapper">
                 <Proj title='AdminDashboard' date='4 March 2022' url='https://images.pexels.com/photos/3422964/pexels-photo-3422964.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' star={2}/>
@@ -71,6 +65,9 @@ const App =()=>{
                 <Proj title='Design_Website' date='25 October 2022' url='https://images.pexels.com/photos/6462662/pexels-photo-6462662.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' star={2}/>
                 <Proj title='Design_Website' date='25 October 2022' url='https://images.pexels.com/photos/3752194/pexels-photo-3752194.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load' star={2}/>
                 <Proj title='Design_Website' date='25 October 2022' url='https://images.pexels.com/photos/4388593/pexels-photo-4388593.jpeg?auto=compress&cs=tinysrgb&w=1600' star={2}/>
+                <Proj title='Design_Website' date='25 October 2022' url='https://images.pexels.com/photos/14544309/pexels-photo-14544309.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load' star={2}/>
+                <Proj title='Design_Website' date='25 October 2022' url='https://images.pexels.com/photos/11065012/pexels-photo-11065012.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' star={2}/>
+                <Proj title='Design_Website' date='25 October 2022' url='https://images.pexels.com/photos/6929306/pexels-photo-6929306.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' star={2}/>
                 </div>
             </div>
                 <ExpandMoreIcon className='nextIcon'
@@ -83,3 +80,5 @@ const App =()=>{
 }
 
 export default App;
+
+
