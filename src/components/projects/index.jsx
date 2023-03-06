@@ -53,18 +53,25 @@ const App =()=>{
     const color =  token;
     
     return(
-        <div className='projectContainer'
+        <div className='projectContainer' id='Projects'
             style={{
-                background: color.blue[800]
+                background: color.blue[800],
+                color: color.blue[100]
             }}
         >
-            <div className="projectsWrapper">
-              <Proj title='AdminDashboard' date='4 March 2022' url='https://images.pexels.com/photos/3422964/pexels-photo-3422964.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' star={2}/>
-              <Proj title='Design a website' date='10 June 2022' url='https://images.pexels.com/photos/3805759/pexels-photo-3805759.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load' star={2}/>
-              <Proj title='Design_Website' date='25 October 2022' url='https://images.pexels.com/photos/13804931/pexels-photo-13804931.jpeg?auto=compress&cs=tinysrgb&w=600' star={2}/>
-              <Proj title='Design_Website' date='25 October 2022' url='https://images.pexels.com/photos/6462662/pexels-photo-6462662.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' star={2}/>
-              <Proj title='Design_Website' date='25 October 2022' url='https://images.pexels.com/photos/3752194/pexels-photo-3752194.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load' star={2}/>
-              <Proj title='Design_Website' date='25 October 2022' url='https://images.pexels.com/photos/4388593/pexels-photo-4388593.jpeg?auto=compress&cs=tinysrgb&w=1600' star={2}/>
+            <div style={{width: '100%',padding:'10px', display: 'flex'}}>
+                
+                <h1 style={{padding: '10px',width:'99%',margin:'10px auto 10px auto',textAlign:'center', color: color.blue[500], border:`2px solid ${color.blue[500]}`, borderRadius:'10px', boxShadow:`0 0 5px ${color.blue[500]}`}}>Project</h1>
+            </div>
+            <div className='boxWrapper'>
+                <div className="projectsWrapper">
+                <Proj title='AdminDashboard' date='4 March 2022' url='https://images.pexels.com/photos/3422964/pexels-photo-3422964.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' star={2}/>
+                <Proj title='Design a website' date='10 June 2022' url='https://images.pexels.com/photos/3805759/pexels-photo-3805759.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load' star={2}/>
+                <Proj title='Design_Website' date='25 October 2022' url='https://images.pexels.com/photos/13804931/pexels-photo-13804931.jpeg?auto=compress&cs=tinysrgb&w=600' star={2}/>
+                <Proj title='Design_Website' date='25 October 2022' url='https://images.pexels.com/photos/6462662/pexels-photo-6462662.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' star={2}/>
+                <Proj title='Design_Website' date='25 October 2022' url='https://images.pexels.com/photos/3752194/pexels-photo-3752194.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load' star={2}/>
+                <Proj title='Design_Website' date='25 October 2022' url='https://images.pexels.com/photos/4388593/pexels-photo-4388593.jpeg?auto=compress&cs=tinysrgb&w=1600' star={2}/>
+                </div>
             </div>
                 <ExpandMoreIcon className='nextIcon'
                     style={{

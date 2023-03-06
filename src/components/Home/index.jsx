@@ -1,6 +1,7 @@
 // import React from 'react';
 import {token} from '../../them'
 
+
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import EmailIcon from '@mui/icons-material/Email';
@@ -25,27 +26,22 @@ const color =  token;
                 <p>Mr.BAKH<span style={{fontweigth:"400", fontSize:'12px'}}>_Portfolio</span></p>
                 <div className='rightHeader'
                 >
-                    <div className='textBox'
-                        style={{
-                            color: color.gray[900]
-                        }}
-                    >
-                        <span className='textHeader'>Certificates</span>
-                        <span className='textHeader'>Projects</span>
+                    <div className='textBox'>
+                        <a href='#certificate'style={{color: color.gray[900], textDecoration:'none'}}><span className='textHeader'>Certificates</span></a>
+                        <a href='#Projects' style={{color: color.gray[900], textDecoration:'none'}}><span className='textHeader'>Projects</span></a>
                     </div>
                     <Brightness4Icon className='icon'/>
                 </div>
            </div>
             <div className="fixicons"
                 style={{
-                    background: color.blue[700],
-                    color: color.gray[900]
+                    // background: color.blue[700],
                 }}
             >
-                <TelegramIcon className='icon'/>
-                <EmailIcon className='icon'/>
-                <GitHubIcon className='icon'/>
-                <LinkedInIcon className='icon'/>
+                <a href="https://telegram.dog/Mr_BAKH1" style={{color: color.gray[400]}}><TelegramIcon className='icon'/></a>
+                <a href="mailto:mr.bakh.usb@gmail.com" style={{color: color.gray[400]}}><EmailIcon className='icon'/></a>
+                <a href="https://github.com/Mr-BAKH" style={{color: color.gray[400]}}><GitHubIcon className='icon'/></a>
+                <a href="https://www.linkedin.com/in/amirhosseinbakhoda" style={{color: color.gray[400]}}><LinkedInIcon className='icon'/></a>
             </div>
             {/* my profile and desctiption of me */}
             <div className='mainPortfolio'>
@@ -56,13 +52,9 @@ const color =  token;
                     <p style={{margin:'20px 0px',color: color.gray[900],fontSize: '20px'}}>
                         I have started programming with html, css, javascript languages ​​for two years and I have done several projects in this field. Finally, I started my activity in the field of React and I intend to work in this field...
                     </p>
-                    <ul>
-                        <li>Phone: +98 9154968488</li>
-                        <li>Gmail: mr.bakh.usb@gmail.com</li>
-                    </ul>
                 </div>
             </div>
-                <span className='expandMore'><ExpandMoreIcon/></span>
+                <span className='expandMore' style={{color: color.blue[800]}}><ExpandMoreIcon/></span>
                 
         </div>
     )

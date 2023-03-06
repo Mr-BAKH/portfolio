@@ -1,0 +1,33 @@
+.comment{
+    display: flex;
+    width: 400px;
+    max-height: 300px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 50px;
+    border-radius: 10px;
+    margin: 10px;
+    border: 5px solid #ffff;
+
+}
+
+
+.commentContainer{
+    background: linear-gradient(90deg,#ffffff00, #ffffff,#ffffff00);
+    padding: 10px;
+    width: 90%;
+    margin: auto;
+    border-radius: 10px 10px 0 0 ;
+    margin-top: 10vh;
+}
+
+.commentWrapper{
+    width: fit-content; 
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}

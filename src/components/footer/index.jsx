@@ -1,3 +1,4 @@
+import React from 'react';
 import './style.css'
 import {token} from '../../them'
 import GroupsIcon from '@mui/icons-material/Groups';
@@ -7,6 +8,27 @@ import Box from '@mui/material/Box';
 const App = ()=>{
 
     const color =  token;
+
+    const [inp, setInp] = React.useState({
+      name:'',
+      email:'',
+      phone:'',
+      description:''
+    })
+    
+    const onchangeHandler =(e)=>{
+        setInp({...inp, [e.target.name]: e.target.value})
+    }
+
+    const submithandler = (e)=>{
+        e.preventDefault();
+        setInp({
+            name:'',
+            phone:'',
+            email:'',
+            description:'',
+        })
+    }
     
     return(
         <div className="footer"
@@ -38,13 +60,14 @@ const App = ()=>{
                     style={{
                         color: color.blue[800]
                     }}>
-                        <form className='formInputs'>
+                        <form className='formInputs' onSubmit={submithandler}>
                             <div className='customer'>
                                 <span className='submitText' style={{color: color.orange[600]}}>Submit your Projectto us now!</span>
-                                <input style={{boxShadow:` 0 0 5px ${color.orange[700]}`,background: color.gray[900]}} className='inputs' type='text' placeholder='Enter your name'/>
-                                <input style={{boxShadow:` 0 0 5px ${color.orange[700]}`,background: color.gray[900]}} className='inputs'type='tel' placeholder='Enter your phone'/>
-                                <input style={{boxShadow:` 0 0 5px ${color.orange[700]}`,background: color.gray[900]}} className='inputs'type='email' placeholder='Enter your email'/>
+                                <input onChange={onchangeHandler} value={inp.name} name={"name"} style={{boxShadow:` 0 0 5px ${color.gray[800]}`,background: color.gray[900]}} className='inputs' type='text' placeholder='Enter your name'/>
+                                <input onChange={onchangeHandler} value={inp.phone} name={"phone"} style={{boxShadow:` 0 0 5px ${color.gray[800]}`,background: color.gray[900]}} className='inputs'type='tel' placeholder='Enter your phone'/>
+                                <input onChange={onchangeHandler} value={inp.email} name={"email"} style={{boxShadow:` 0 0 5px ${color.gray[800]}`,background: color.gray[900]}} className='inputs'type='email' placeholder='Enter your email'/>
                                 <button 
+                                    type='submit'
                                     className='buttonStyle'
                                     style={{
                                         color: color.gray[100],
@@ -53,8 +76,8 @@ const App = ()=>{
                                 >send</button>
                             </div>
                             <div className='discription'>
-                                <textarea  className='inputs' name='description' placeholder='description...'
-                                style={{boxShadow:` 0 0 5px ${color.orange[700]}`,textAlign: 'start', width: "100%", height:'100%', background: color.gray[900], fontSize: '30px'}}/>
+                                <textarea onChange={onchangeHandler} value={inp.description} name={"description"}  className='inputs' name='description' placeholder='Description...'
+                                style={{boxShadow:` 0 0 5px ${color.gray[800]}`,textAlign: 'start', width: "100%", height:'100%', background: color.gray[900], fontSize: '30px'}}/>
                             </div>
                         </form>
                     </div> 

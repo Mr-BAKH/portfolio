@@ -30,7 +30,7 @@
 
 .icon:hover{
     cursor: pointer;
-    color:#edebed ;
+    color: #47a6ab;
     animation: borderA 0.2s 1 both;
 }
 
@@ -52,8 +52,9 @@
     padding: 10px;
     position: fixed;
     z-index: 1000;
-    bottom: 60vh;
+    bottom: 45vh;
     left: 8px;
+    background-color: #16272892;
     box-shadow: 0px 0px 5px #162728;
 }
 
