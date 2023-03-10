@@ -74,7 +74,6 @@
 }
 
 .description{
-    /* opacity: 0; */
     display:flex;
     flex-direction: column;
     width: 30%;
@@ -86,7 +85,7 @@
     z-index: 1;
     right: 18%;
     top: 135vh;
-    animation: sayHellow 2s 3s 1 forwards ease;
+    animation: sayHellow 1s 2s 1 forwards ease;
 }
 
 

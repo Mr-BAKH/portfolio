@@ -18,7 +18,8 @@ font-family: 'Titan One', cursive; */
 }
 /* width */
 ::-webkit-scrollbar {
-  width: 15px;
+  /* width: 15px; */
+  width: 0px;
 }
 
 
@@ -27,7 +28,6 @@ font-family: 'Titan One', cursive; */
   background: #c8c4c83f;
   background: rgba(255, 255, 255, 0.2);
   cursor: pointer;
-  
 }
 
 /* Handle */
@@ -82,7 +82,7 @@ font-family: 'Titan One', cursive; */
 }
 @keyframes sayHellow {
   0%{}
-  100%{ opacity: 1; top: 40vh;}
+  100%{ opacity: 1; top: 30vh;}
 }
 @keyframes mrBakh {
   0%{left:-50%,}

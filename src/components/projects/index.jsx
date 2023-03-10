@@ -56,7 +56,9 @@ const App =()=>{
                 color: color.blue[100]
             }}
         >
-            <span style={{position:'absolute',top:'10px',left:'20px',fontSize:'40px',color:color.gray[100]}}>Project</span>
+            <span style={{top:'10px',position:'absolute',width:"100%",textAlign:'center'}}>
+                <span style={{fontSize:'40px',color:color.gray[200],fontFamily:`'Fredoka One', cursive`}}>Latest projects</span>
+                </span>
             <div className='boxWrapper'>
                 <div className="projectsWrapper">
                 <Proj title='AdminDashboard' date='4 March 2022' url='https://images.pexels.com/photos/3422964/pexels-photo-3422964.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' star={2}/>

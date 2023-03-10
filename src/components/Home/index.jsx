@@ -95,7 +95,7 @@ const color =  token;
                             animation: 'toleft 2s 10s 1 forwards ease',
                         }}
                     >Designer</span>
-                    <span
+                    {/* <span
                         style={{
                             opacity: '0',
                             color:color.gray[400],
@@ -107,7 +107,7 @@ const color =  token;
                             zIndex:'1',
                             animation: 'mrBakh 2s 1s 1 forwards ease'
                         }}
-                    >Mr.Bakh</span>
+                    >Mr.Bakh</span> */}
                 </div>
                 <div className='description'>
                     <h1 style={{color: color.blue[800]}}>Hi,there</h1>

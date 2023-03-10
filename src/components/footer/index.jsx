@@ -1,86 +1,45 @@
 import React from 'react';
 import './style.css'
 import {token} from '../../them'
-import GroupsIcon from '@mui/icons-material/Groups';
-import Box from '@mui/material/Box';
-
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const App = ()=>{
 
-    const color =  token;
+    const color = token;
 
-    const [inp, setInp] = React.useState({
-      name:'',
-      email:'',
-      phone:'',
-      description:''
-    })
-    
-    const onchangeHandler =(e)=>{
-        setInp({...inp, [e.target.name]: e.target.value})
-    }
-
-    const submithandler = (e)=>{
-        e.preventDefault();
-        setInp({
-            name:'',
-            phone:'',
-            email:'',
-            description:'',
-        })
-    }
-    
     return(
-        <div className="footer"
+        <div className="footerContainer"
             style={{
-                background: color.blue[900],
-                color: color.blue[900],
-                borderTop: `10px solid ${color.blue[700]}`
+                backgroundColor: color.blue[600]
             }}
         >
-            <div className="footerConainer">
-
-                <Box className='left'
-                    sx={{
-                        color: color.gray[900],
-                        background: color.blue[800]
-                    }}>
-                        <Box 
-                        sx={{
-                            fontSize: '25px', fontWeight:'bolder', color: color.gray[400],
-                            display: 'flex', alignItems: 'center',gap: '5px'
-                            }}>
-                            <span>My team</span>
-                            <GroupsIcon className='grouIcon'/>
-                        </Box>
-                        <p>are ready to work with you to design any website model you want in the shortest possible time. Contact us if needed.</p>
-                </Box>
-                    
-                <div className="center"
+            <div className="footertop">
+                <p
                     style={{
+                        width:'70%',    
+                        height: 'fit-content',
+                        fontSize:'40px',
+                        padding: '0 5vw',
+                        fontFamily:`'Caveat', cursive`,
                         color: color.blue[800]
-                    }}>
-                        <form className='formInputs' onSubmit={submithandler}>
-                            <div className='customer'>
-                                <span className='submitText' style={{color: color.orange[600]}}>Submit your Projectto us now!</span>
-                                <input onChange={onchangeHandler} value={inp.name} name={"name"} style={{boxShadow:` 0 0 5px ${color.gray[800]}`,background: color.gray[900]}} className='inputs' type='text' placeholder='Enter your name'/>
-                                <input onChange={onchangeHandler} value={inp.phone} name={"phone"} style={{boxShadow:` 0 0 5px ${color.gray[800]}`,background: color.gray[900]}} className='inputs'type='tel' placeholder='Enter your phone'/>
-                                <input onChange={onchangeHandler} value={inp.email} name={"email"} style={{boxShadow:` 0 0 5px ${color.gray[800]}`,background: color.gray[900]}} className='inputs'type='email' placeholder='Enter your email'/>
-                                <button 
-                                    type='submit'
-                                    className='buttonStyle'
-                                    style={{
-                                        color: color.gray[100],
-                                        background: color.blue[700],    
-                                    }}
-                                >send</button>
-                            </div>
-                            <div className='discription'>
-                                <textarea onChange={onchangeHandler} value={inp.description} name={"description"}  className='inputs' name='description' placeholder='Description...'
-                                style={{boxShadow:` 0 0 5px ${color.gray[800]}`,textAlign: 'start', width: "100%", height:'100%', background: color.gray[900], fontSize: '30px'}}/>
-                            </div>
-                        </form>
-                    </div> 
+                    }}
+                >Our team works tirelessly to provide quality services and the best solutions for your problems, considering customer satisfaction. You can fully trust the expertise and integrity of our team.</p>
+                <div className='lindLists'>
+                    <ul className='ul_footer_link'>
+                        <li style={{marginTop:'5px',display:'flex',alignItems:'center'}}><ExpandMoreIcon style={{rotate:'-90deg',color: color.orange[200],fontSize:'20px'}}/><a style={{color: color.blue[800],textDecoration: 'none', fontSize:"20px",fontFamily:`'Titan One', cursive`}} href="#certificate">Certificate</a></li>
+                        <li style={{marginTop:'5px',display:'flex',alignItems:'center'}}><ExpandMoreIcon style={{rotate:'-90deg',color: color.orange[200],fontSize:'20px'}}/><a style={{color: color.blue[800],textDecoration: 'none', fontSize:"20px",fontFamily:`'Titan One', cursive`}} href="#Comment">Comment</a></li>
+                        <li style={{marginTop:'5px',display:'flex',alignItems:'center'}}><ExpandMoreIcon style={{rotate:'-90deg',color: color.orange[200],fontSize:'20px'}}/><a style={{color: color.blue[800],textDecoration: 'none', fontSize:"20px",fontFamily:`'Titan One', cursive`}} href="#Projects">Project</a></li>
+                        <li style={{marginTop:'5px',display:'flex',alignItems:'center'}}><ExpandMoreIcon style={{rotate:'-90deg',color: color.orange[200],fontSize:'20px'}}/><a style={{color: color.blue[800],textDecoration: 'none', fontSize:"20px",fontFamily:`'Titan One', cursive`}} href="#teamMemmber">Team</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div className="footerbottom"
+                style={{
+                    borderTop: `2px solid ${color.blue[800]}`
+                }}
+            >
+                <div style={{borderRight:`2px solid ${color.blue[800]}`,paddingRight:'10px'}}>Mr.bakh</div>
+                <div>reated by mr.bakh</div>
             </div>
         </div>
     )

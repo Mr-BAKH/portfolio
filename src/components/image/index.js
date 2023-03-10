@@ -10,7 +10,6 @@ const App =(props)=>{
                 height: '800px',
                 textShadow: '2px 2px red',
                 postion:'relative',
-                filter:"hue-rotate(350deg)",
                 zIndex:'3'
             }}/>
             <img src={localimage} alt="amirIage" style={{
@@ -29,15 +28,6 @@ const App =(props)=>{
                 position:'absolute',
                 filter:"blur(1px) brightness(0) opacity(0.5)",
                 zIndex:'1'
-            }}/>
-            <img src={localimage} alt="amirIage" style={{
-                width: '802px',
-                height: '802px',
-                left:'-14px',
-                top: '-5px',   
-                position:'absolute',
-                filter:"blur(10px) brightness(0) opacity(0.4)",
-                zIndex:'0'
             }}/>
         </div>
     )
