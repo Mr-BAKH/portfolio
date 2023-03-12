@@ -1,5 +1,8 @@
 import './style.css'
 import {token} from '../../them'
+import React,{useRef , useEffect } from "react"
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ChatIcon from '@mui/icons-material/Chat';
@@ -48,9 +51,28 @@ const StarCreator = (props) => {
 const App =()=>{
     
     const color =  token;
+    gsap.registerPlugin(ScrollTrigger);
+    const ref = useRef(null);
+
+    useEffect(() => {
+    if (ref.current) {
+        gsap.from(ref.current, {
+        opacity: 0,
+        y: 200,
+        duration: 2,
+        ease: 'power2.out',
+        scrollTrigger: {
+            trigger: ref.current,
+            start: 'top 80%',
+            end: 'bottom 100%',
+            scrub: true,
+        },
+        });
+    }
+    }, []);
     
     return(
-        <div className='projectContainer' id='Projects'
+        <div ref={ref} className='projectContainer' id='Projects'
             style={{
                 background: color.blue[800],
                 color: color.blue[100]

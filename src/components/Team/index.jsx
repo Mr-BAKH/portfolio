@@ -8,6 +8,10 @@ import Mddost from '../../assets/photo/4.jpg'
 import Javad from '../../assets/photo/3.jpg'
 import Farshid from '../../assets/photo/5.jpg'
 import Circle from '../global/canvas'
+import React,{useRef , useEffect } from "react"
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
 
 const TeamMemmber =(props)=>{
 
@@ -69,8 +73,28 @@ const App = ()=>{
 
     const color = token;
 
+    gsap.registerPlugin(ScrollTrigger);
+    const ref = useRef(null);
+
+    useEffect(() => {
+    if (ref.current) {
+        gsap.from(ref.current, {
+        opacity: 0,
+        y: 200,
+        duration: 1,
+        ease: 'power2.out',
+        scrollTrigger: {
+            trigger: ref.current,
+            start: 'top 100%',
+            end: 'bottom 100%',
+            scrub: true,
+        },
+        });
+    }
+    }, []);
+    
     return(
-        <div className="mainContainer" id='teamMemmber'>
+        <div ref={ref} className="mainContainer" id='teamMemmber'>
             <span style={{textAlign:'center',height:'5vh', fontSize:'40px', fontFamily:`'Fredoka One', cursive`}}>Team</span>
                    <DetailMemmber/>
                 <div className="partTeam">

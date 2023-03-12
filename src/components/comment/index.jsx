@@ -1,13 +1,37 @@
 import "./style.css";
 import {token} from '../../them'
+import React,{useRef, useEffect} from "react"
+import { gsap } from "gsap";
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 
 const CommentBox = (props)=>{
 
     const color =  token;
+    
+    gsap.registerPlugin(ScrollTrigger);
+    const ref = useRef(null);
+    
+    useEffect(() => {
+        if (ref.current) {
+            gsap.from(ref.current, {
+            opacity: 0,
+            y: 100,
+            duration: 2,
+            ease: 'power2.out',
+            scrollTrigger: {
+               trigger: ref.current,
+               start: 'top 80%',
+               end: 'bottom 90%',
+               scrub: true,
+            },
+            });
+        }
+        }, []);
+
 
     return(
-        <div className="comment"
+        <div className="comment" ref={ref}
             style={{
                 background: color.orange[600] ,
                 boxShadow: `0 0 5px ${color.orange[500]}`

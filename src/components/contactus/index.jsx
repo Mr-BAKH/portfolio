@@ -1,8 +1,10 @@
-import React from 'react';
 import './style.css'
 import {token} from '../../them'
 import Circle from '../global/canvas';
 import WritingImg from '../../assets/photo/Writing.jpg'
+import {gsap} from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import React,{useRef , useEffect } from "react"
 
 
 const ProgCircle =(props)=>{
@@ -25,6 +27,9 @@ const App = ()=>{
 
     const color =  token;
 
+    gsap.registerPlugin(ScrollTrigger);
+    const ref = useRef(null);
+
     const [inp, setInp] = React.useState({
       name:'',
       email:'',
@@ -45,9 +50,26 @@ const App = ()=>{
             description:'',
         })
     }
+
+ useEffect(() => {
+ if (ref.current) {
+     gsap.from(ref.current, {
+     opacity: 0,
+     y: 100,
+     duration: 2,
+     ease: 'power2.out',
+     scrollTrigger: {
+        trigger: ref.current,
+        start: 'top 80%',
+        end: 'bottom 90%',
+        scrub: true,
+     },
+     });
+ }
+ }, []);
     
     return(
-       <div className="contactUsContainer">
+       <div ref={ref} className="contactUsContainer">
             <img className="leftContainer"
                 style={{
                     boxShadow:`-10px 5px 10px ${color.blue[500]}`

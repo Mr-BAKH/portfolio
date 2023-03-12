@@ -32,7 +32,7 @@
 
 .icon:hover{
     cursor: pointer;
-    color: #47a6ab;
+    color: aqua;
     animation: borderA 0.2s 1 both;
 }
 

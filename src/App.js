@@ -6,9 +6,6 @@ import ContactUs from "./components/contactus/index"
 import Ads from "./components/ads/index";
 import Team from "./components/Team/index";
 import Comment from "./components/comment/index";
-import React from 'react';
-
-
 
 import {token} from './them'
 
@@ -27,10 +24,7 @@ function App() {
       <Certificate/>
       <ContactUs/>
       <Footersite/>
-      {/* <Img/> */}
-      {/* <GSAP/> */}
     </div>
-
   );
 }
 

@@ -25,13 +25,7 @@ const color =  token;
             }}   
         >
                 <p>Mr.BAKH<span style={{fontweigth:"400", fontSize:'12px'}}>_Portfolio</span></p>
-                <div className='rightHeader'
-                >
-                    <div className='textBox'>
-                        <a href='#certificate'style={{color: color.gray[900], textDecoration:'none'}}><span className='textHeader'>Certificates</span></a>
-                        <a href='#Projects' style={{color: color.gray[900], textDecoration:'none'}}><span className='textHeader'>Projects</span></a>
-                        <a href='#Comment' style={{color: color.gray[900], textDecoration:'none'}}><span className='textHeader'>Comment</span></a>
-                    </div>
+                <div className='rightHeader'>
                     <Brightness4Icon className='icon'/>
                 </div>
            </div>
