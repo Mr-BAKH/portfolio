@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/github.io/portfolio/static/css/main.882c01c9.css",
+    "main.js": "/github.io/portfolio/static/js/main.f0d4c0dd.js",
+    "static/media/bakh copy.png": "/github.io/portfolio/static/media/bakh copy.8c70f938fdda04f945f5.png",
+    "static/media/1.png": "/github.io/portfolio/static/media/1.da8586ec9ef3ef0ababe.png",
+    "static/media/3.jpg": "/github.io/portfolio/static/media/3.f419f596884bba95937e.jpg",
+    "static/media/amirPhoto.jpg": "/github.io/portfolio/static/media/amirPhoto.bc4dd7709632cf2db1c7.jpg",
+    "static/media/4.jpg": "/github.io/portfolio/static/media/4.ce601b6b79a159c04a4c.jpg",
+    "static/media/2.jpg": "/github.io/portfolio/static/media/2.9dec0bcd96e16cb8eece.jpg",
+    "static/media/5.jpg": "/github.io/portfolio/static/media/5.6c9b9b1fb93374c0a909.jpg",
+    "static/media/Writing.jpg": "/github.io/portfolio/static/media/Writing.b29cc2d8f0ce3aac28a9.jpg",
+    "index.html": "/github.io/portfolio/index.html",
+    "main.882c01c9.css.map": "/github.io/portfolio/static/css/main.882c01c9.css.map",
+    "main.f0d4c0dd.js.map": "/github.io/portfolio/static/js/main.f0d4c0dd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.882c01c9.css",
+    "static/js/main.f0d4c0dd.js"
+  ]
+}
