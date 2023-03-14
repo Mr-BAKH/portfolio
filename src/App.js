@@ -19,7 +19,7 @@ function App() {
       <Home/>
       <Proj/>
       <Comment/>
-      <Team/>
+      {/* <Team/>/ */}
       <Ads/>
       <Certificate/>
       <ContactUs/>

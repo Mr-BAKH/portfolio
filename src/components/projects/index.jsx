@@ -22,7 +22,7 @@ const Proj = (props)=>{
             <div className="detailBox">
                 <div className="detailleft"
                     style={{
-                        color: color.gray[200]
+                        color: color.gray[200],
                     }}
                 >
                     <h2>{props.title}</h2>
@@ -79,7 +79,7 @@ const App =()=>{
             }}
         >
             <span style={{top:'10px',position:'absolute',width:"100%",textAlign:'center'}}>
-                <span style={{fontSize:'40px',color:color.gray[200],fontFamily:`'Fredoka One', cursive`}}>Latest projects</span>
+                <span style={{fontSize:'30px',color:color.gray[200],fontFamily:`'Fredoka One', cursive`}}>Latest projects</span>
                 </span>
             <div className='boxWrapper'>
                 <div className="projectsWrapper">

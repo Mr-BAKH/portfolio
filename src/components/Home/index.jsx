@@ -1,7 +1,7 @@
 // import React from 'react';
 import {token} from '../../them'
 
-import ProfileImage from '../image/index'
+import localimage from '../../assets/photo/bakh copy.png'
 
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import TelegramIcon from '@mui/icons-material/Telegram';
@@ -29,11 +29,7 @@ const color =  token;
                     <Brightness4Icon className='icon'/>
                 </div>
            </div>
-            <div className="fixicons"
-                style={{
-                    // background: color.blue[700],
-                }}
-            >
+            <div className="fixicons">
                 <a href="#home" style={{color: color.gray[400]}}><HomeIcon className='icon'/></a>
                 <a href="mailto:mr.bakh.usb@gmail.com" style={{color: color.gray[400]}}><EmailIcon className='icon'/></a>
                 <a href="https://telegram.dog/Mr_BAKH1" style={{color: color.gray[400]}}><TelegramIcon className='icon'/></a>
@@ -42,71 +38,16 @@ const color =  token;
             </div>
             {/* my profile and desctiption of me */}
             <div className='mainPortfolio'>
-                <div style={{postion:'absolute'}}>
-                    <ProfileImage heigth={500} style={{
-                        position:'absolute',
-                         zIndex:'2',
-                         }}/>
-                    <span
-                        style={{
-                            opacity: '0',
-                            color:color.blue[900],
-                            fontSize:'50px',
-                            fontFamily: `'Titan One', cursive`,
-                            position:'absolute',
-                            bottom:'20vh',
-                            right:'2%',
-                            zIndex:'3',
-                            display:'block',
-                            padding: '2px 5px',
-                            background: color.orange[600],
-                            animation: 'toleft 2s 10s 1 forwards ease',
-                        }}
-                        >FullStack</span>
-                    <span
-                        style={{
-                            // opacity: '0',
-                            color:color.blue[700],
-                            fontSize:'150px',
-                            fontFamily: `'Titan One', cursive`,
-                            position:'absolute',
-                            right:'100vw',
-                            bottom:'32vh',
-                            zIndex:'1',
-                            animation: 'toright 2s 9s 1 forwards ease',
-                        }}
-                    >Web</span>
-                    <span
-                        style={{
-                            opacity: '0',
-                            color:color.blue[600],
-                            fontSize:'140px',
-                            fontFamily: `'Titan One', cursive`,
-                            position:'absolute',
-                            right:'100vw',
-                            bottom:'5vh',
-                            zIndex:'3',
-                            animation: 'toleft 2s 10s 1 forwards ease',
-                        }}
-                    >Designer</span>
-                    {/* <span
-                        style={{
-                            opacity: '0',
-                            color:color.gray[400],
-                            fontSize:'150px',
-                            fontFamily: `'Titan One', cursive`,
-                            position:'absolute',
-                            left:'-100%',
-                            top:'15vh',
-                            zIndex:'1',
-                            animation: 'mrBakh 2s 1s 1 forwards ease'
-                        }}
-                    >Mr.Bakh</span> */}
-                </div>
+                <img src={localimage} alt="amirIage" style={{
+                            width: '50vw',
+                            minWidth:'300px',
+                            minHeight:'300px',
+                            height: '50vw', 
+                }}/>
                 <div className='description'>
                     <h1 style={{color: color.blue[800]}}>Hi,there</h1>
                     <h3 style={{color: color.blue[700]}}>wellcome to my portfolio.</h3>
-                    <p style={{margin:'20px 0px',color: color.gray[900],fontSize: '20px'}}>
+                    <p style={{margin:'20px 0px',color: color.gray[900],fontSize: '18px'}}>
                         I have started programming with html, css, javascript languages ​​for two years and I have done several projects in this field. Finally, I started my activity in the field of React and I intend to work in this field...
                     </p>
                 </div>

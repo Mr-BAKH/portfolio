@@ -63,14 +63,10 @@ const App =()=>{
                 fontFamily:`'Fredoka One', cursive`
             }}>Comment</h1>
            <div className="commentWrapper">
-                        {/* <CommentBox userName='Tom' comment="good work" commet image={'https://images.pexels.com/photos/1704488/pexels-photo-1704488.jpeg?auto=compress&cs=tinysrgb&w=1600'}/> */}
                         <CommentBox userName='Joy' comment="Thank bro youre perfict." commet image={'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1600'}/>
                         <CommentBox userName='Susan' comment="Hi, I Reale love your project and i whant to send a new offer for my project" commet image={'https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1600'}/>
                         <CommentBox userName='Sara' comment="I love you webpage, but i think you can be really better as soon as you can. I wish you so goodd. thanks. " commet image={'https://images.pexels.com/photos/1310522/pexels-photo-1310522.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'}/>
-                        {/* <CommentBox userName='Sara' comment="I love you webpage, but i think you can be really better as soon as you can. I wish you so goodd. thanks. " commet image={'https://images.pexels.com/photos/1310522/pexels-photo-1310522.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'}/>
-                        <CommentBox userName='Sara' comment="I love you webpage, but i think you can be really better as soon as you can. I wish you so goodd. thanks. " commet image={'https://images.pexels.com/photos/1310522/pexels-photo-1310522.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'}/>
-                        <CommentBox userName='Sara' comment="I love you webpage, but i think you can be really better as soon as you can. I wish you so goodd. thanks. " commet image={'https://images.pexels.com/photos/1310522/pexels-photo-1310522.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'}/> */}
-                </div>
+                     </div>
     
         </div>
     )

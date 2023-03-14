@@ -14,14 +14,12 @@
 
 .certificateWrapper{
     width: 100%;
-    height: fit-content;
+    padding: 10vh 1vh;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 70px;
     gap: 20px;
-    overflow: hidden;
 }
 .certificate:hover .imageCertificate{
     top: 35px;
@@ -57,7 +55,7 @@
 
 .certificateContainer{
     width: 100%;
-    height: 80vh;
-    padding: 2vw;
-    overflow: hidden;
+    min-height: 500px;
+    padding: 0 1vw;
+    backdrop-filter: blur(1px);
 }

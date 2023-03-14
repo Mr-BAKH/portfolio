@@ -70,24 +70,20 @@ const App = ()=>{
     
     return(
        <div ref={ref} className="contactUsContainer">
-            <img className="leftContainer"
-                style={{
-                    boxShadow:`-10px 5px 10px ${color.blue[500]}`
-                }}
-            src={WritingImg} alt='image'/>
+            <img className="leftContainer" src={WritingImg} alt='image'/>
             <form className="writeContainer"onSubmit={submithandler}>
                     <input className='inputSt' onChange={onchangeHandler} value={inp.name} name={"name"} type='text' placeholder='Enter your name'/>
                     <input className='inputSt' onChange={onchangeHandler} value={inp.phone} name={"phone"} type='tel' placeholder='Enter your phone'/>
                     <input className='inputSt' onChange={onchangeHandler} value={inp.email} name={"email"} type='email' placeholder='Enter your email'/>
                     <textarea className='inputSt'style={{height:'200px'}} onChange={onchangeHandler} value={inp.description} name={"description"} placeholder='Description...'/>
                     <button className="buttomform" style={{ padding:'10px 20px', border:'none',background:color.blue[500]}} type='submit'>Send</button>
-                <div className='abluteUs'>
-                   <ProgCircle title="Projects" number={70}/>
-                   <ProgCircle title="Houres" number={"50K"}/>
-                   <ProgCircle title="Client" number={90}/>
-                   <ProgCircle title="Years" number={3}/>
-                </div>
             </form> 
+            <div className='abluteUs'>
+                <ProgCircle title="Projects" number={70}/>
+                <ProgCircle title="Houres" number={"50K"}/>
+                <ProgCircle title="Client" number={90}/>
+                <ProgCircle title="Years" number={3}/>
+            </div>
        </div>
                     
     )

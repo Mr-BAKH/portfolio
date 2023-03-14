@@ -16,21 +16,22 @@ const App = ()=>{
             <div className="footertop">
                 <p
                     style={{
-                        width:'70%',    
+                        width:'70vw',    
+                        minWidth: '300px',
+                        // background: 'red',
+                        textAlign:'center',
                         height: 'fit-content',
                         fontSize:'40px',
-                        padding: '0 5vw',
+                        padding: '5px',
                         fontFamily:`'Caveat', cursive`,
                         color: color.blue[800]
                     }}
                 >Our team works tirelessly to provide quality services and the best solutions for your problems, considering customer satisfaction. You can fully trust the expertise and integrity of our team.</p>
                 <div className='lindLists'>
-                    <ul className='ul_footer_link'>
-                        <li style={{marginTop:'5px',display:'flex',alignItems:'center'}}><ExpandMoreIcon style={{rotate:'-90deg',color: color.orange[200],fontSize:'20px'}}/><a style={{color: color.blue[800],textDecoration: 'none', fontSize:"20px",fontFamily:`'Titan One', cursive`}} href="#certificate">Certificate</a></li>
-                        <li style={{marginTop:'5px',display:'flex',alignItems:'center'}}><ExpandMoreIcon style={{rotate:'-90deg',color: color.orange[200],fontSize:'20px'}}/><a style={{color: color.blue[800],textDecoration: 'none', fontSize:"20px",fontFamily:`'Titan One', cursive`}} href="#Comment">Comment</a></li>
-                        <li style={{marginTop:'5px',display:'flex',alignItems:'center'}}><ExpandMoreIcon style={{rotate:'-90deg',color: color.orange[200],fontSize:'20px'}}/><a style={{color: color.blue[800],textDecoration: 'none', fontSize:"20px",fontFamily:`'Titan One', cursive`}} href="#Projects">Project</a></li>
-                        <li style={{marginTop:'5px',display:'flex',alignItems:'center'}}><ExpandMoreIcon style={{rotate:'-90deg',color: color.orange[200],fontSize:'20px'}}/><a style={{color: color.blue[800],textDecoration: 'none', fontSize:"20px",fontFamily:`'Titan One', cursive`}} href="#teamMemmber">Team</a></li>
-                    </ul>
+                        <li style={{marginTop:'5px',display:'flex',alignItems:'center'}}><ExpandMoreIcon style={{rotate:'-180deg',color: color.orange[200],fontSize:'20px'}}/><a style={{color: color.blue[800],textDecoration: 'none', fontSize:"20px",fontFamily:`'Titan One', cursive`}} href="#certificate">Certificate</a></li>
+                        <li style={{marginTop:'5px',display:'flex',alignItems:'center'}}><ExpandMoreIcon style={{rotate:'-180deg',color: color.orange[200],fontSize:'20px'}}/><a style={{color: color.blue[800],textDecoration: 'none', fontSize:"20px",fontFamily:`'Titan One', cursive`}} href="#Comment">Comment</a></li>
+                        <li style={{marginTop:'5px',display:'flex',alignItems:'center'}}><ExpandMoreIcon style={{rotate:'-180deg',color: color.orange[200],fontSize:'20px'}}/><a style={{color: color.blue[800],textDecoration: 'none', fontSize:"20px",fontFamily:`'Titan One', cursive`}} href="#Projects">Project</a></li>
+                        <li style={{marginTop:'5px',display:'flex',alignItems:'center'}}><ExpandMoreIcon style={{rotate:'-180deg',color: color.orange[200],fontSize:'20px'}}/><a style={{color: color.blue[800],textDecoration: 'none', fontSize:"20px",fontFamily:`'Titan One', cursive`}} href="#teamMemmber">Team</a></li>
                 </div>
             </div>
             <div className="footerbottom"

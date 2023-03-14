@@ -33,7 +33,7 @@ const App =()=>{
  if (ref.current) {
      gsap.from(ref.current, {
      opacity: 0,
-     x: 1000,
+     y: 100,
      duration: 2,
      ease: 'power2.out',
      scrollTrigger: {
@@ -53,18 +53,6 @@ const App =()=>{
                             url={'https://www.coursera.org/account/accomplishments/verify/DGZC5R89KH98'}
                             img={'https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~DGZC5R89KH98/CERTIFICATE_LANDING_PAGE~DGZC5R89KH98.jpeg'}
                             title="React Basic"/>
-                        <Certificate 
-                            url={'https://www.coursera.org/account/accomplishments/verify/DGZC5R89KH98'}
-                            img={'https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~VWR38PXGXRQB/CERTIFICATE_LANDING_PAGE~VWR38PXGXRQB.jpeg'}
-                            title="React Advance"/>
-                        <Certificate 
-                            url={'https://www.coursera.org/account/accomplishments/verify/DGZC5R89KH98'}
-                            img={'https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~VWR38PXGXRQB/CERTIFICATE_LANDING_PAGE~VWR38PXGXRQB.jpeg'}
-                            title="React Advance"/>
-                        <Certificate 
-                            url={'https://www.coursera.org/account/accomplishments/verify/DGZC5R89KH98'}
-                            img={'https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~VWR38PXGXRQB/CERTIFICATE_LANDING_PAGE~VWR38PXGXRQB.jpeg'}
-                            title="React Advance"/>
                         <Certificate 
                             url={'https://www.coursera.org/account/accomplishments/verify/DGZC5R89KH98'}
                             img={'https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~VWR38PXGXRQB/CERTIFICATE_LANDING_PAGE~VWR38PXGXRQB.jpeg'}

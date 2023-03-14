@@ -1,7 +1,7 @@
 
 .mainhomePage{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     overflow: hidden;
 }
 
@@ -40,22 +40,22 @@
 
 .icon{
     margin: 2px 0;
-    font-size: 30px !important;
+    font-size: 2.5vw !important;
     display: block;
 }
 
 .fixicons{
     display: flex;
-    width:40px;
+    width:4vw;
     flex-wrap: wrap;
-    border-radius: 10px;
+    border-radius: 2vw;
     align-items: center;
     justify-content: center;
     padding: 10px;
     position: fixed;
     z-index: 1000;
-    bottom: 45vh;
-    left: 8px;
+    top: 30vh;
+    left: 1vw;
     background-color: #16272892;
     box-shadow: 0px 0px 5px #162728;
 }
@@ -66,8 +66,8 @@
     height: 95%;
     display: flex;
     flex-wrap: wrap;
-    align-items: end;
-    justify-content: start;
+    align-items: center;
+    justify-content: center;
     padding-left: 7%;
     overflow: hidden;
     animation: wellcome 1s 1 0.2s ease-out forwards;
@@ -76,16 +76,12 @@
 .description{
     display:flex;
     flex-direction: column;
-    width: 30%;
-    height: 50;
-    margin-bottom: 50vh;
-    padding: 10px;
-    margin-right: 70px;
-    position: absolute;
-    z-index: 1;
-    right: 18%;
-    top: 135vh;
-    animation: sayHellow 1s 2s 1 forwards ease;
+    width: 40vw;
+    min-width: 300px;
+    padding: 1vw;
+
+   
+    /* animation: sayHellow 1s 2s 1 forwards ease; */
 }
 
 
