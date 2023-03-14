@@ -9,7 +9,7 @@ const App = ()=>{
     return(
         <div className="adsContainer"
             style={{
-                background: color.gray[200]
+                background: `linear-gradient(0deg,${color.orange[100]} ,rgba(0, 0, 0, 0))`,
             }}
         >
             <div className="adsWrapper">

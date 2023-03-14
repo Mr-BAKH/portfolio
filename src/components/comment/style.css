@@ -1,7 +1,7 @@
 .comment{
     display: flex;
-    width: 400px;
-    max-height: 300px;
+    width: 300px;
+    max-height: 350px;
     flex-direction: column;
     align-items: center;
     justify-content: start;
@@ -9,25 +9,27 @@
     border-radius: 10px;
     margin: 10px;
     border: 5px solid #ffff;
-
+}
+.comment:hover{
+    box-shadow: 0 0 15px #fd9d5b !important;
 }
 
-
 .commentContainer{
-    background: linear-gradient(90deg,#ffffff00, #ffffff,#ffffff00);
-    padding: 10px;
-    width: 90%;
+    background: linear-gradient(90deg,#ffffff, #ffffff00,#ffffff);
+    width: 100%;
+    min-height: 500px;
     margin: auto;
-    border-radius: 10px 10px 0 0 ;
-    margin-top: 10vh;
+    position: relative;
+    padding-top: 10px;
 }
 
 .commentWrapper{
-    width: fit-content; 
-    height: 400px;
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 20px;
+    
 
 }

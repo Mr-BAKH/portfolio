@@ -1,40 +1,61 @@
-.imageBox11{
-    width: 400px;
-    height: 300px;
-    background-position: center;
-    background-size: cover;
-    border-radius: 0 0 100% 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-.imageBox11:hover{
-    border-radius: 0;
-    transition: .2s ease-in;
-}
 
 
 .certificate{
-    overflow: hidden;
+    width: 300px;
+    height: 210px;
+    display: flex;
+    margin: 20px 10px 0 0 ;
+    align-items: start;
+    justify-content: space-between;
+    position: relative;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.477);
+    cursor: pointer;
+}
+
+.certificateWrapper{
+    width: 100%;
+    padding: 10vh 1vh;
     display: flex;
     align-items: center;
-    width: 400px;
-    height: 310px;
-    padding-top: 10px;
-    overflow: hidden;
-    position: relative;
+    flex-wrap: wrap;
     justify-content: center;
-    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.477);
-}
-.certificate:hover{
-    box-shadow: 0px 0px 10px #8dd0d3;
-    transition: .05s ease;
-}
-.certificateWrapper{
-    width: fit-content;
-    display: flex;
-    justify-content: flex-start;
-    padding: 10px 0 10px 50px ;
     gap: 20px;
+}
+.certificate:hover .imageCertificate{
+    top: 35px;
+    transition: .1s ease all;
+}
+
+.certificate:hover{
+    box-shadow: 0 0 10px aquamarine;
+}
+
+.imageCertificate{
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: .1s ease all;
+    object-fit: cover;
+    position: absolute;
+    z-index: 1;
+}
+.showmore{
+    font-family: 'Caveat', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px ;
+    font-weight: 900;
+    width: 100%;
+    padding: 5px;
+    position: absolute;
+    z-index: 0;
+    text-decoration: none;
+}
+
+.certificateContainer{
+    width: 100%;
+    min-height: 500px;
+    padding: 0 1vw;
+    backdrop-filter: blur(1px);
 }
