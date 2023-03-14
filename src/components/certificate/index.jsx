@@ -5,6 +5,9 @@ import React,{useRef , useEffect } from "react"
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
+import Advace from '../../assets/photo/Advance.jpg'
+import Basic from '../../assets/photo/Basic.jpg'
+
 
 
 const Certificate =(props)=>{
@@ -51,11 +54,11 @@ const App =()=>{
                     <div  ref={ref} className='certificateWrapper'>
                         <Certificate 
                             url={'https://www.coursera.org/account/accomplishments/verify/DGZC5R89KH98'}
-                            img={'https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~DGZC5R89KH98/CERTIFICATE_LANDING_PAGE~DGZC5R89KH98.jpeg'}
+                            img={Basic}
                             title="React Basic"/>
                         <Certificate 
-                            url={'https://www.coursera.org/account/accomplishments/verify/DGZC5R89KH98'}
-                            img={'https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~VWR38PXGXRQB/CERTIFICATE_LANDING_PAGE~VWR38PXGXRQB.jpeg'}
+                            url={'https://www.coursera.org/account/accomplishments/verify/VWR38PXGXRQB'}
+                            img={Advace}
                             title="React Advance"/>
                     </div>
         </div>

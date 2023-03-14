@@ -4,6 +4,10 @@ import React,{useRef, useEffect} from "react"
 import { gsap } from "gsap";
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
+import img2 from '../../assets/photo/comment/comment1.jpg'
+import img1 from '../../assets/photo/comment/comment2.jpg'
+import img3 from '../../assets/photo/comment/comment3.jpg'
+
 
 const CommentBox = (props)=>{
 
@@ -44,7 +48,7 @@ const CommentBox = (props)=>{
             backgroundRepeat: 'no-repeat',
             }}></span>
             <h4 style={{ color: color.gray[100], fontSize:'20px'}}>{props.userName}</h4>
-            <p style={{color: color.gray[900], marginTop:'5px', fontWeight:'400'}}>{props.comment}</p>
+            <p style={{color: color.gray[900], marginTop:'5px', fontWeight:'400', wordBreak:"break-word"}}>{props.comment}</p>
         </div>
     )
 }
@@ -63,9 +67,9 @@ const App =()=>{
                 fontFamily:`'Fredoka One', cursive`
             }}>Comment</h1>
            <div className="commentWrapper">
-                        <CommentBox userName='Joy' comment="Thank bro youre perfict." commet image={'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1600'}/>
-                        <CommentBox userName='Susan' comment="Hi, I Reale love your project and i whant to send a new offer for my project" commet image={'https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1600'}/>
-                        <CommentBox userName='Sara' comment="I love you webpage, but i think you can be really better as soon as you can. I wish you so goodd. thanks. " commet image={'https://images.pexels.com/photos/1310522/pexels-photo-1310522.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'}/>
+                        <CommentBox userName='Joy' comment="Thank you for the beautiful design you did for my personal site. I will come to you again next time" image={img1}/>
+                        <CommentBox userName='Susan' comment="I think I did the right thing to meet you." image={img2}/>
+                        <CommentBox userName='Sara' comment="After doing the whole job, you got my attention, you are great. Thankful"  image={img3}/>
                      </div>
     
         </div>

@@ -7,7 +7,6 @@
 
 .projectsWrapper{
     padding-top: 50px;
-    /* padding: 0px; */
     width: auto;
     height: 100%;
     flex-wrap: wrap;
@@ -56,34 +55,12 @@
     height:70%;
 }
 
-@media screen and (max-width: 500px) {
-    .proj{
-        width: 300px;
-        height: 200px;
-    }
-    .imageBox{
-        width: 100%;
-        height: 100%;
-        background-position: center;
-        background-repeat: no-repeat;
-        position: absolute;
-        background-size: cover;
-        z-index: 2;
-        transition: all .2s ease ;
-    }
-    
-    .proj:hover .imageBox{
-        transition: all .2s ease ;
-        height:15vh;
-    }
-}
 
 
 .detailBox{
     z-index: 1;
     width: 100%;
     padding: 10px;
-    flex-wrap: wrap;
     position: absolute;
     display: flex;
     align-items: flex-end;
@@ -101,5 +78,36 @@
 
 }
 .detailleft{
+    width: 40%;
     margin-left: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 14px;
+
 }
+@media screen and (max-width: 500px) {
+    .detailleft{
+        width: 100%;
+    }
+    .proj{
+            width: 300px;
+            height: 200px;
+        }
+        .imageBox{
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            background-size: cover;
+            z-index: 2;
+            transition: all .2s ease ;
+        }
+        
+        .proj:hover .imageBox{
+            transition: all .2s ease ;
+            height:15vh;
+        }
+    }
