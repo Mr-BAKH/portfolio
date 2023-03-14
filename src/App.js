@@ -19,7 +19,6 @@ function App() {
       <Home/>
       <Proj/>
       <Comment/>
-      {/* <Team/>/ */}
       <Ads/>
       <Certificate/>
       <ContactUs/>
@@ -29,3 +28,5 @@ function App() {
 }
 
 export default App;
+
+{/* <Team/>/ */}
