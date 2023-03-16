@@ -15,6 +15,7 @@ font-family: 'Titan One', cursive; */
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
   scroll-behavior: smooth;
+  animation: wellcome 1s 1 0.2s ease-out forwards;
 }
 /* width */
 ::-webkit-scrollbar {

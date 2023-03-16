@@ -76,7 +76,7 @@ const App = ()=>{
                     <input className='inputSt' onChange={onchangeHandler} value={inp.phone} name={"phone"} type='tel' placeholder='Enter your phone'/>
                     <input className='inputSt' onChange={onchangeHandler} value={inp.email} name={"email"} type='email' placeholder='Enter your email'/>
                     <textarea className='inputSt'style={{height:'200px'}} onChange={onchangeHandler} value={inp.description} name={"description"} placeholder='Description...'/>
-                    <button className="buttomform" style={{ padding:'10px 20px', border:'none',background:color.blue[500]}} type='submit'>Send</button>
+                    <button className="buttomform" style={{ background:color.blue[500]}} type='submit'>Send</button>
             </form> 
             <div className='abluteUs'>
                 <ProgCircle title="Projects" number={70}/>

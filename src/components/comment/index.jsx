@@ -7,6 +7,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import img2 from '../../assets/photo/comment/comment1.jpg'
 import img1 from '../../assets/photo/comment/comment2.jpg'
 import img3 from '../../assets/photo/comment/comment3.jpg'
+import img4 from '../../assets/photo/comment/comment4.png'
 
 
 const CommentBox = (props)=>{
@@ -20,7 +21,7 @@ const CommentBox = (props)=>{
         if (ref.current) {
             gsap.from(ref.current, {
             opacity: 0,
-            y: 100,
+            x: -100,
             duration: 2,
             ease: 'power2.out',
             scrollTrigger: {
@@ -70,6 +71,7 @@ const App =()=>{
                         <CommentBox userName='Joy' comment="Thank you for the beautiful design you did for my personal site. I will come to you again next time" image={img1}/>
                         <CommentBox userName='Susan' comment="I think I did the right thing to meet you." image={img2}/>
                         <CommentBox userName='Sara' comment="After doing the whole job, you got my attention, you are great. Thankful"  image={img3}/>
+                        <CommentBox userName='Homan' comment="I saw good work from you. Maybe I can recommend you to my friends."  image={img4}/>
                      </div>
     
         </div>

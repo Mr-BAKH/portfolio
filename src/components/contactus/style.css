@@ -29,6 +29,7 @@
     width: 100%;
     border: none;
     padding: 10px;
+    font-size: 16px;
 }
 .inputSt:focus{
     outline: none;
@@ -43,7 +44,11 @@
     gap: 10px;
 }
 
-.buttomform:hover{
-    filter: brightness(.9) ;
+.buttomform{
+    padding:10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 5px rgba(83, 83, 83, 0.379) inset;
     cursor: pointer;
-}
+    }

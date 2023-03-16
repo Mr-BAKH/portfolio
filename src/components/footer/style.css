@@ -6,6 +6,10 @@
     padding: 10px;
     margin-top: 100px;
 }
+.footerContainer::before{
+    contain: '';
+    border-top-right-radius: 10px;
+}
 
 .footertop{
     width: 100%;
@@ -19,11 +23,7 @@
 .footerbottom{
     margin: auto;
     width: 80%;
-    height: 20%;
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    padding: 10px 0px;
 }
 
 .lindLists{
@@ -37,3 +37,4 @@
     align-items: center;
     justify-content: space-evenly;
 }
+

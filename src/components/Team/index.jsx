@@ -6,11 +6,12 @@ import Hayyati from '../../assets/photo/amirPhoto.jpg'
 import Ryhanny from '../../assets/photo/2.jpg'
 import Mddost from '../../assets/photo/4.jpg'
 import Javad from '../../assets/photo/3.jpg'
-import Farshid from '../../assets/photo/5.jpg'
+
 import Circle from '../global/canvas'
 import React,{useRef , useEffect } from "react"
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { color } from '@mui/system'
 
 
 const TeamMemmber =(props)=>{
@@ -20,12 +21,12 @@ const TeamMemmber =(props)=>{
     return(
         <div className="container"
             style={{
-                color: color.gray[100]
+                color: color.gray[900]
             }}
         >
-            <img src={props.image} style={{width:'100px',height:'100px',borderRadius:"50%",boxShadow:`0 0 10px ${color.blue[400]}`}}/>
-            <span style={{fontSize:'20px',textShadow:`0 0 10px ${color.blue[800]}`}}>{props.name}</span>
-            <span style={{fontSize:'12px',textShadow:`0 0 10px ${color.blue[800]}`}}>{props.position}</span>
+            <img src={props.image} style={{width:'100px',height:'100px',borderRadius:"50%",boxShadow:`0 0 5px ${color.gray[500]} `}}/>
+            <span style={{marginTop:'5px',fontSize:'18px',textShadow:`0 0 10px ${color.gray[500]}`}}>{props.name}</span>
+            <span style={{fontSize:'14px',textShadow:`0 0 10px ${color.gray[500]}`}}>{props.position}</span>
         </div> 
     )
 }
@@ -47,23 +48,28 @@ const ProgCircle = (props)=>{
 }
 
 const DetailMemmber =()=>{
+    const color = token;
+    
     return(
         <div className="centerWrapper">
+        <img
+            style={{
+                background: `linear-gradient(0deg,${color.gray[100]} 20%, ${color.blue[200]})`,
+                borderBottom: `10px solid ${color.gray[200]}`,
+            }}
+            className='ImageMemmber'src={localimage} alt="profile" />
         <div className="detail">
-            <span style={{fontSize:"50px"}}>AmirHosseinBakhoda</span>
-            <br/>
-            <span style={{fontSize:"20px",fontweight:"300"}}>FullStack</span>
-            <p style={{marginTop:'10px',wordSpacing:'2px',wordBreak:'break-word',wordWrap:"break-word"}}>ChatGPT is a member of the generative pre-trained transformer (GPT) family of language models. It was fine-tuned (an approach to transfer learning[6]) over an improved version of OpenAI's GPT-3 known as "GPT 3.5".[7] The fine-tuning process leveraged both supervised learning as well as reinforcement learning in a process called reinforcement learning from human feedback (RLHF).[8][9] Both approaches used human trainers to improve the model's performance.reate 'reward models' that the model was further fine-tuned on using several iterations of Proximal Policy Optimization (PPO).[8][11] Proximal Policy Optimiza</p>
+            <div className='textDetail'>
+                <span style={{margin:'auto',fontSize:"180%",display:'flex',flexWrap:'wrap'}}>AmirHosseinBakhoda</span>
+                <span style={{margin:'auto',fontSize:"110%",fontweight:"300"}}>FullStack</span>
+                <p className='detailOfMemmber' style={{marginTop:'20px',textAlign:'justify'}}>Hello, I have started my activity in the field of website design three years ago and completed a number of projects in this field, and some time ago I created a group with my friends that provides complete services from design to the final implementation of web projects. We present. In this field, we are learning and doing the project so that we can create a good result for you with the help of my friends.</p>
+            </div>
             <div className="canvasCircle">
                 <ProgCircle title="Css" prog={94}/>
                 <ProgCircle title="NodeJs" prog={84}/>
                 <ProgCircle title="ReactJs" prog={81}/>
                 <ProgCircle title="UI/UX" prog={85}/>
             </div>
-        </div>
-        <div className="image">
-
-            <img style={{width:'90%', height:'100%', objectFit:'cover'}} src={localimage} alt="profile" />
         </div>
     </div>
     )
@@ -94,17 +100,21 @@ const App = ()=>{
     }, []);
     
     return(
-        <div ref={ref} className="mainContainer" id='teamMemmber'>
-            <span style={{textAlign:'center',height:'5vh', fontSize:'40px', fontFamily:`'Fredoka One', cursive`}}>Team</span>
+        // ref={ref} 
+        <div className="mainContainer" id='teamMemmber'>
+            <span style={{textAlign:'center',margin:'10px', fontSize:'30px', fontFamily:`'Fredoka One', cursive`}}>MeetTeam</span>
                    <DetailMemmber/>
-                <div className="partTeam">
+                <div className="partTeam" 
+                    style={{
+                        background: color.gray[300]
+                    }}
+                >
                     <TeamMemmber name='Mr.Bakhoda' image={Bakhoda} position='FrontEnd'/>
                     <TeamMemmber name='Mr.Shekariyan' image={Javad} position='BackEnd'/>
                     <TeamMemmber name='Mr.Hayyati' image={Hayyati} position='FrontEnd'/>
                     <TeamMemmber name='Miss.Ryhanny' image={Ryhanny} position='UI/UX'/>
                     <TeamMemmber name='Mr.MdDost' image={Mddost} position='WorldPress'/>
-                    <TeamMemmber name='Mr.Yazid' image={Farshid} position='WorldPress'/>
-                </div>
+                </div> 
         </div>
     )
 }

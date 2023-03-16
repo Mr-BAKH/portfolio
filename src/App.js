@@ -18,8 +18,9 @@ function App() {
     <div style={{background: color.gray[100]}}>
       <Home/>
       <Proj/>
+      <Team/>
       <Comment/>
-      <Ads/>
+      {/* <Ads/> */}
       <Certificate/>
       <ContactUs/>
       <Footersite/>
@@ -28,5 +29,3 @@ function App() {
 }
 
 export default App;
-
-{/* <Team/>/ */}
