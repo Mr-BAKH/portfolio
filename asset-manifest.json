@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "./static/css/main.7b300672.css",
-    "main.js": "./static/js/main.e5d4f190.js",
+    "main.css": "./static/css/main.e349721c.css",
+    "main.js": "./static/js/main.03776483.js",
     "static/media/bakh copy.png": "./static/media/bakh copy.8c70f938fdda04f945f5.png",
+    "static/media/comment4.png": "./static/media/comment4.a1df1c4a21de8abdee38.png",
     "static/media/1.png": "./static/media/1.da8586ec9ef3ef0ababe.png",
     "static/media/canrRent.jpg": "./static/media/canrRent.238b1a841ec8dcc62ee7.jpg",
     "static/media/3.jpg": "./static/media/3.f419f596884bba95937e.jpg",
@@ -21,16 +22,15 @@
     "static/media/chatApplication.jpg": "./static/media/chatApplication.e3a74b8d0c1f1d7d2963.jpg",
     "static/media/musicPlayer.jpg": "./static/media/musicPlayer.075281e60cdda79cead9.jpg",
     "static/media/comment3.jpg": "./static/media/comment3.c17baf114c4e840e7b60.jpg",
-    "static/media/5.jpg": "./static/media/5.6c9b9b1fb93374c0a909.jpg",
     "static/media/car-rental_car1.jpg": "./static/media/car-rental_car1.236b86529918671243ba.jpg",
     "static/media/comment2.jpg": "./static/media/comment2.029696ac3d960751693a.jpg",
     "static/media/Writing.jpg": "./static/media/Writing.b29cc2d8f0ce3aac28a9.jpg",
     "index.html": "./index.html",
-    "main.7b300672.css.map": "./static/css/main.7b300672.css.map",
-    "main.e5d4f190.js.map": "./static/js/main.e5d4f190.js.map"
+    "main.e349721c.css.map": "./static/css/main.e349721c.css.map",
+    "main.03776483.js.map": "./static/js/main.03776483.js.map"
   },
   "entrypoints": [
-    "static/css/main.7b300672.css",
-    "static/js/main.e5d4f190.js"
+    "static/css/main.e349721c.css",
+    "static/js/main.03776483.js"
   ]
 }
