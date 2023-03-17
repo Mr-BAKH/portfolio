@@ -6,7 +6,6 @@ function Circle(props) {
   useEffect(() => {
     const canvas = canvasRef.current;
     const context = canvas.getContext("2d");
-    console.log(context)
 
     // Set canvas width and height
     canvas.width = props.wid;
