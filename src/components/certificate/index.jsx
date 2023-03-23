@@ -1,12 +1,11 @@
 import './style.css'
-import {token} from '../../them'
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import data from '../../data/index'
 import React,{useRef , useEffect } from "react"
+
+import {token} from '../../them'
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
-import Advace from '../../assets/photo/Advance.jpg'
-import Basic from '../../assets/photo/Basic.jpg'
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 
 
@@ -28,6 +27,7 @@ const Certificate =(props)=>{
 const App =()=>{
 
  const color = token;
+ console.log(data)
 
  gsap.registerPlugin(ScrollTrigger);
  const ref = useRef(null);
@@ -52,14 +52,10 @@ const App =()=>{
         <div className='certificateContainer' id="certificate">
                 <h1 style={{textAlign:'center', color: color.blue[600],fontFamily:`'Fredoka One', cursive`}}>Certificates</h1>
                     <div  ref={ref} className='certificateWrapper'>
-                        <Certificate 
-                            url={'https://www.coursera.org/account/accomplishments/verify/DGZC5R89KH98'}
-                            img={Basic}
-                            title="React Basic"/>
-                        <Certificate 
-                            url={'https://www.coursera.org/account/accomplishments/verify/VWR38PXGXRQB'}
-                            img={Advace}
-                            title="React Advance"/>
+                        {data[0].certificates.map((item)=>{
+                            console.log(item)
+                            return(<Certificate url={item.url} img={item.img}/>)
+                        })} 
                     </div>
         </div>
     )

@@ -2,8 +2,9 @@ import Home from "./components/Home/index"
 import Proj from "./components/projects/index"
 import Footersite from "./components/footer/index"
 import Certificate from "./components/certificate/index"
+import ForTest from "./components/fortest/index"
 import ContactUs from "./components/contactus/index"
-import Ads from "./components/ads/index";
+// import Ads from "./components/ads/index";
 import Team from "./components/Team/index";
 import Comment from "./components/comment/index";
 

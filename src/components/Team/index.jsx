@@ -11,7 +11,6 @@ import Circle from '../global/canvas'
 import React,{useRef , useEffect } from "react"
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { color } from '@mui/system'
 
 
 const TeamMemmber =(props)=>{
