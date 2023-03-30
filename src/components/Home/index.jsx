@@ -1,7 +1,7 @@
 // import React from 'react';
 import {token} from '../../them'
 
-import localimage from '../../assets/photo/bakh copy.png'
+import localimage from '../../assets/photo/img.png'
 
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 

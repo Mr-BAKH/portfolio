@@ -2,7 +2,7 @@ const TeamMemmber =[
     {
         id: 1,
         name:"AmirHossein",
-        img:require("../assets/photo/bakh copy.png"),
+        img:require("../assets/photo/img.png"),
         profImage: require("../assets/photo/1.png"),
         family:"Bakhoda",
         skill:"FrontEnd",

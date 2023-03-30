@@ -1,7 +1,7 @@
 import {token} from '../../them'
 import './style.css'
 import localimage from '../../assets/photo/bakh copy.png'
-import Bakhoda from '../../assets/photo/1.png'
+import Bakhoda from '../../assets/photo/img3.png'
 import Hayyati from '../../assets/photo/amirPhoto.jpg'
 import Ryhanny from '../../assets/photo/2.jpg'
 import Mddost from '../../assets/photo/4.jpg'
@@ -112,7 +112,6 @@ const App = ()=>{
                     <TeamMemmber name='Mr.Shekariyan' image={Javad} position='BackEnd'/>
                     <TeamMemmber name='Mr.Hayyati' image={Hayyati} position='FrontEnd'/>
                     <TeamMemmber name='Miss.Ryhanny' image={Ryhanny} position='UI/UX'/>
-                    <TeamMemmber name='Mr.MdDost' image={Mddost} position='WorldPress'/>
                 </div> 
         </div>
     )
