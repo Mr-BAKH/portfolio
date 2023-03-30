@@ -23,7 +23,7 @@ const color =  token;
                 color: color.gray[100],
             }}   
         >
-                <p>Mr.BAKH<span style={{fontweigth:"400", fontSize:'12px'}}>_Portfolio</span></p>
+                <span style={{fontSize:"22px",color:color.blue[200],textAlign:"center",fontFamily: `Titan One', cursive`,fontWeight:'bolder'}}>web & logo Designer</span>
                 <div className='rightHeader'>
                     <Brightness4Icon className='icon'/>
                 </div>

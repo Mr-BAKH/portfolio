@@ -13,7 +13,6 @@ import img4 from '../../assets/photo/comment/comment4.png'
 const CommentBox = (props)=>{
 
     const color =  token;
-    
     gsap.registerPlugin(ScrollTrigger);
     const ref = useRef(null);
     
@@ -38,18 +37,18 @@ const CommentBox = (props)=>{
     return(
         <div className="comment" ref={ref}
             style={{
-                background: color.orange[600] ,
-                boxShadow: `0 0 5px ${color.orange[500]}`
+                // background: color.orange[600],
+                boxShadow: `inset 0 0 10px ${color.orange[500]}`
             }}
         >
-            <span style={{boxShadow:`0 0 10px ${color.orange[500]}` ,border:`5px solid ${color.orange[300]}`, marginBottom:'10px',borderRadius:'50%',display:'block',width:"100px", height:'100px',
+            <span style={{boxShadow:`0 0 50px ${color.orange[500]}` ,border:`5px solid ${color.orange[300]}`, marginBottom:'10px',borderRadius:'50%',display:'block',width:"200px", height:'200px',
             backgroundImage:`url(${props.image})`,
             backgroundPosition: '40% 30%',
             backgroundSize:"cover",
             backgroundRepeat: 'no-repeat',
             }}></span>
-            <h4 style={{ color: color.gray[100], fontSize:'20px'}}>{props.userName}</h4>
-            <p style={{color: color.gray[900], marginTop:'5px', fontWeight:'400', wordBreak:"break-word"}}>{props.comment}</p>
+            <h4 style={{ color: color.orange[800], fontSize:'25px',fontWeight:'500'}}>{props.userName}</h4>
+            <p style={{padding:"10px", color: color.gray[900], marginTop:'5px', fontWeight:'900',fontSize:'16px',textAlign:'center'}}>{props.comment}</p>
         </div>
     )
 }
@@ -68,11 +67,10 @@ const App =()=>{
                 fontFamily:`'Fredoka One', cursive`
             }}>Comment</h1>
            <div className="commentWrapper">
-                        <CommentBox userName='Joy' comment="Thank you for the beautiful design you did for my personal site. I will come to you again next time" image={img1}/>
-                        <CommentBox userName='Susan' comment="I think I did the right thing to meet you." image={img2}/>
-                        <CommentBox userName='Sara' comment="After doing the whole job, you got my attention, you are great. Thankful"  image={img3}/>
-                        <CommentBox userName='Homan' comment="I saw good work from you. Maybe I can recommend you to my friends."  image={img4}/>
-                     </div>
+                <CommentBox userName='Joy' comment="Thank you for the beautiful design you did for my personal site. I will come to you again next time" image={img1}/>
+                <CommentBox userName='Susan' comment="I think I did the right thing to meet you." image={img2}/>
+                <CommentBox userName='Sara' comment="After doing the whole job, you got my attention, you are great. Thankful"  image={img3}/>
+            </div>
     
         </div>
     )

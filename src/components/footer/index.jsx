@@ -9,6 +9,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import HomeIcon from '@mui/icons-material/Home';
+import { padding, textAlign } from '@mui/system';
 
 
 const App = ()=>{
@@ -25,28 +26,24 @@ const App = ()=>{
            
             <div className="footertop">
                 <p
+                    className='text-foote-top'
                     style={{
-                        width:'70vw',    
-                        minWidth: '300px',
-                        textAlign:'inherit',
-                        height: 'fit-content',
-                        fontSize:'20px',
-                        padding: '10px',
-                        // fontFamily:`'Caveat', cursive`,
-                        color: color.blue[800]
+                        color: color.blue[800],
+                        textAlign:'initial',
                     }}
                 >Our team works tirelessly to provide quality services and the best solutions for your problems, considering customer satisfaction. You can fully trust the expertise and integrity of our team.</p>
-                <div className='lindLists'>
-                        <li style={{marginTop:'5px',display:'flex',alignItems:'center'}}><a style={{color: color.gray[900],textDecoration: 'none', fontSize:"16px",fontFamily:`'Titan One', cursive`}} href="#certificate">Certificate</a></li>
-                        <li style={{marginTop:'5px',display:'flex',alignItems:'center'}}><a style={{color: color.gray[900],textDecoration: 'none', fontSize:"16px",fontFamily:`'Titan One', cursive`}} href="#Comment">Comment</a></li>
-                        <li style={{marginTop:'5px',display:'flex',alignItems:'center'}}><a style={{color: color.gray[900],textDecoration: 'none', fontSize:"16px",fontFamily:`'Titan One', cursive`}} href="#Projects">Project</a></li>
-                        <li style={{marginTop:'5px',display:'flex',alignItems:'center'}}><a style={{color: color.gray[900],textDecoration: 'none', fontSize:"16px",fontFamily:`'Titan One', cursive`}} href="#teamMemmber">Team</a></li>
-                </div>
+                <ul className='lindLists'>
+                    <li><a style={{color: color.gray[900]}} href="#certificate">Certificate</a></li>
+                    <li><a style={{color: color.gray[900]}} href="#Comment">Comment</a></li>
+                    <li><a style={{color: color.gray[900]}} href="#Projects">Project</a></li>
+                    <li><a style={{color: color.gray[900]}} href="#teamMemmber">Team</a></li>
+                </ul>
             </div>
             <div className="footerbottom"
                 style={{
-                    borderTop: `2px solid ${color.gray[900]}`,
-                    color: color.gray[900],
+                    marginTop:"50px",
+                    borderTop: `2px solid ${color.blue[700]}`,
+                    color: color.blue[800],
                     fontSize:"10px",
                 }}
             >

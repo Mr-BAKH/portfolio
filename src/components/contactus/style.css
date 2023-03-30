@@ -36,6 +36,7 @@
 }
 .abluteUs{
     width: 100%;
+    padding: 0 30px;
     margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -45,10 +46,11 @@
 }
 
 .buttomform{
+    width: 100%;
     padding:10px 20px;
     font-size: 16px;
     border-radius: 10px;
     border: none;
-    box-shadow: 0 0 5px rgba(83, 83, 83, 0.379) inset;
+    box-shadow: 0 0 5px rgba(0, 80, 94, 0.379) inset;
     cursor: pointer;
     }

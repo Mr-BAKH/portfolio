@@ -14,11 +14,12 @@
 .footertop{
     width: 100%;
     height: 80%;
+    gap: 10px;
     position: relative;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 .footerbottom{
     margin: auto;
@@ -28,13 +29,36 @@
 
 .lindLists{
     padding:10px;
-    width: 40vw;
-    min-width: 300px;
-    margin: 100px 0 5px 0;
-    height: fit-content;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+    justify-content: center;
+
+}
+.lindLists>li{
+    font-weight: 600;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.lindLists>li:hover{
+   box-shadow: inset 0 0 10px aqua;
 }
 
+.text-foote-top{
+    width:50vw;    
+    min-width: 300px;
+    text-align:center;
+    height: fit-content;
+    font-size:20px;
+    padding: 20px;
+}
+
+@media screen and (max-width: 500px){
+    .lindLists{
+        flex-direction: row !important;
+        flex-wrap: wrap;
+    }
+}

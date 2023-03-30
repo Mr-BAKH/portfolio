@@ -27,35 +27,20 @@ const Proj = (props)=>{
     return(
 
         <div className='proj'>
-            <div className="imageBox"
-                style={{backgroundImage:`url(${props.url})`}}
-            ></div>
-            <div className="detailBox">
-                <div className="detailleft"
-                    style={{
-                        color: color.gray[100],
-                    }}
-                >
-                    <span style={{ width: '100%'}} ><StarCreator/></span>
-                    <span style={{ width: '100%'}} >{props.title}</span>
-                    <span style={{ width: '100%'}} >{props.date}</span>
-                </div>
-                <div className="detailright">
-                    <ChatIcon/>
-                    <FavoriteIcon/>
-                    <ExpandMoreIcon/>
-                </div>
-
+            <div className="imageBox"style={{backgroundImage:`url(${props.url})`}}></div>
+            <div className="detailBox"
+            style={{
+                color: color.gray[100],
+            }}
+            >
+             <span><GradeIcon/><GradeIcon/><GradeIcon/><GradeIcon/><GradeIcon/></span>
+             <span style={{fontSize:'20px'}}>{props.title}</span>
+             <span style={{fontSize:'12px'}}>{props.date}</span>
             </div>
         </div>
     );
 };
 
-const StarCreator = (props) => {
-    return(
-        <span><GradeIcon/><GradeIcon/><GradeIcon/><GradeIcon/><GradeIcon/></span>
-    )
-}
 
 
 

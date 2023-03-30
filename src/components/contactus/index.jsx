@@ -79,10 +79,10 @@ const App = ()=>{
                     <button className="buttomform" style={{ background:color.blue[500]}} type='submit'>Send</button>
             </form> 
             <div className='abluteUs'>
-                <ProgCircle title="Projects" number={70}/>
+                <ProgCircle title="Projects" number={30}/>
                 <ProgCircle title="Houres" number={"50K"}/>
-                <ProgCircle title="Client" number={90}/>
-                <ProgCircle title="Years" number={3}/>
+                <ProgCircle title="Client" number={20}/>
+                <ProgCircle title="Years" number={4}/>
             </div>
        </div>
                     

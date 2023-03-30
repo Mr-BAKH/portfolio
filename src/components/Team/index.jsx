@@ -23,9 +23,11 @@ const TeamMemmber =(props)=>{
                 color: color.gray[900]
             }}
         >
-            <img src={props.image} style={{width:'100px',height:'100px',borderRadius:"50%",boxShadow:`0 0 5px ${color.gray[500]} `}}/>
-            <span style={{marginTop:'5px',fontSize:'18px',textShadow:`0 0 10px ${color.gray[500]}`}}>{props.name}</span>
-            <span style={{fontSize:'14px',textShadow:`0 0 10px ${color.gray[500]}`}}>{props.position}</span>
+            <a href={props.url}>
+                <img src={props.image} style={{width:'100px',height:'100px',borderRadius:"50%",boxShadow:`0 0 5px ${color.gray[500]} `}}/>
+            </a>
+                <span style={{marginTop:'5px',fontSize:'18px',textShadow:`0 0 10px ${color.gray[500]}`}}>{props.name}</span>
+                <span style={{fontSize:'14px',textShadow:`0 0 10px ${color.gray[500]}`}}>{props.position}</span>
         </div> 
     )
 }
@@ -108,10 +110,10 @@ const App = ()=>{
                         background: color.gray[300]
                     }}
                 >
-                    <TeamMemmber name='Mr.Bakhoda' image={Bakhoda} position='FrontEnd'/>
-                    <TeamMemmber name='Mr.Shekariyan' image={Javad} position='BackEnd'/>
-                    <TeamMemmber name='Mr.Hayyati' image={Hayyati} position='FrontEnd'/>
-                    <TeamMemmber name='Miss.Ryhanny' image={Ryhanny} position='UI/UX'/>
+                    <TeamMemmber name='Mr.Bakhoda' image={Bakhoda} position='FrontEnd' url={''}/>
+                    <TeamMemmber name='Mr.Shekariyan' image={Javad} position='BackEnd' url={''}/>
+                    <TeamMemmber name='Mr.Hayyati' image={Hayyati} position='FrontEnd' url={'https://amir-hossein-hayati.ir/'}/>
+                    <TeamMemmber name='Miss.Ryhanny' image={Ryhanny} position='UI/UX/Logo' url={'https://mr-bakh.github.io/portfoli_Reyhani/'}/>
                 </div> 
         </div>
     )

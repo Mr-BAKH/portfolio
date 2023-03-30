@@ -2,6 +2,7 @@
 .mainhomePage{
     width: 100%;
     padding-bottom: 20px;
+    height: fit-content;
     overflow: hidden;
 }
 
@@ -66,8 +67,8 @@
         width:30px;
     }    
     .description{
-        position: absolute;
-        top: 2vh;
+        margin-bottom: 400px !important;
+        margin-right: 0 !important;
     }
     .mainPortfolio{
         border-bottom-left-radius: 70% !important;
@@ -80,7 +81,8 @@
 .mainPortfolio{
     width: 100%;
     position: relative;
-    height: calc(100vh - 60px);
+    min-height: calc(100vh - 60px);
+    height: fit-content;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -104,6 +106,7 @@
     display:flex;
     flex-direction: column;
     width: 40vw;
+    margin-right: 200px;
     min-width: 300px;
-    padding: 7vw; 
+    padding: 10vw 7vw; 
 }

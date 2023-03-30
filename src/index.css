@@ -45,6 +45,14 @@ font-family: 'Titan One', cursive; */
   background: #211f21;
 }
 
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+
 @keyframes nextAne {
   0%{transform: translateY(50px);}
   100%{transform: translateY(-50px);}

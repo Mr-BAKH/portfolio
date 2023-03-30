@@ -1,7 +1,7 @@
 .comment{
     display: flex;
     width: 300px;
-    max-height: 350px;
+    max-height: 500px;
     transform: scale(.9);
     flex-direction: column;
     align-items: center;
