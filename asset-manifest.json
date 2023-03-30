@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.75e7f289.css",
-    "main.js": "./static/js/main.d9a0a726.js",
+    "main.js": "./static/js/main.6e1a0263.js",
     "static/media/img.png": "./static/media/img.9cad1b6a65692f700040.png",
     "static/media/bakh copy.png": "./static/media/bakh copy.8c70f938fdda04f945f5.png",
     "static/media/img3.png": "./static/media/img3.cdb647c889b31980326b.png",
@@ -11,12 +11,14 @@
     "static/media/3.jpg": "./static/media/3.f419f596884bba95937e.jpg",
     "static/media/amirPhoto.jpg": "./static/media/amirPhoto.bc4dd7709632cf2db1c7.jpg",
     "static/media/comment1.jpg": "./static/media/comment1.c9c9096bb183c6a69148.jpg",
+    "static/media/logo1.jpg": "./static/media/logo1.bfb3d291484be3f8212f.jpg",
     "static/media/homeDecoration.jpg": "./static/media/homeDecoration.b1c045a90545e3003f9c.jpg",
     "static/media/personalWebsite.jpg": "./static/media/personalWebsite.7274d4e63d09eefe48ec.jpg",
     "static/media/Advance.jpg": "./static/media/Advance.943fe3673669c9d8a200.jpg",
     "static/media/Basic.jpg": "./static/media/Basic.fb1b22df0afb25a67973.jpg",
     "static/media/jymProject.jpg": "./static/media/jymProject.b96dc8fb84786d52977e.jpg",
     "static/media/4.jpg": "./static/media/4.ce601b6b79a159c04a4c.jpg",
+    "static/media/logo2.jpg": "./static/media/logo2.a2a384de8b22ae11e162.jpg",
     "static/media/homeRental.jpg": "./static/media/homeRental.326cc5c62a0ce6ba7a87.jpg",
     "static/media/2.jpg": "./static/media/2.9dec0bcd96e16cb8eece.jpg",
     "static/media/videoPlayer.jpg": "./static/media/videoPlayer.57576a85ca674e8222bb.jpg",
@@ -24,15 +26,16 @@
     "static/media/chatApplication.jpg": "./static/media/chatApplication.e3a74b8d0c1f1d7d2963.jpg",
     "static/media/musicPlayer.jpg": "./static/media/musicPlayer.075281e60cdda79cead9.jpg",
     "static/media/comment3.jpg": "./static/media/comment3.c17baf114c4e840e7b60.jpg",
+    "static/media/logo3.jpg": "./static/media/logo3.c3518ea89a4cf3c602ef.jpg",
     "static/media/car-rental_car1.jpg": "./static/media/car-rental_car1.236b86529918671243ba.jpg",
     "static/media/comment2.jpg": "./static/media/comment2.029696ac3d960751693a.jpg",
     "static/media/Writing.jpg": "./static/media/Writing.b29cc2d8f0ce3aac28a9.jpg",
     "index.html": "./index.html",
     "main.75e7f289.css.map": "./static/css/main.75e7f289.css.map",
-    "main.d9a0a726.js.map": "./static/js/main.d9a0a726.js.map"
+    "main.6e1a0263.js.map": "./static/js/main.6e1a0263.js.map"
   },
   "entrypoints": [
     "static/css/main.75e7f289.css",
-    "static/js/main.d9a0a726.js"
+    "static/js/main.6e1a0263.js"
   ]
 }
