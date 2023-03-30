@@ -81,6 +81,7 @@ const App = ()=>{
 
     gsap.registerPlugin(ScrollTrigger);
     const ref = useRef(null);
+    const ref1 = useRef(null);
 
     useEffect(() => {
     if (ref.current) {
@@ -97,14 +98,28 @@ const App = ()=>{
         },
         });
     }
+    if (ref1.current) {
+        gsap.from(ref1.current, {
+        opacity: 0,
+        x: -200,
+        duration: 2,
+        ease: 'power2.out',
+        scrollTrigger: {
+            trigger: ref1.current,
+            start: 'top 100%',
+            end: 'bottom 100%',
+            scrub: true,
+        },
+        });
+    }
     }, []);
     
     return(
-        // ref={ref} 
-        <div className="mainContainer" id='teamMemmber'>
+ 
+        <div ref={ref} className="mainContainer" id='teamMemmber'>
             <span style={{textAlign:'center',margin:'10px', fontSize:'30px', fontFamily:`'Fredoka One', cursive`}}>MeetTeam</span>
                    <DetailMemmber/>
-                <div className="partTeam" 
+                <div ref={ref1} className="partTeam" 
                     style={{
                         background: color.gray[300]
                     }}

@@ -51,6 +51,7 @@ const App =()=>{
     const color =  token;
     gsap.registerPlugin(ScrollTrigger);
     const ref = useRef(null);
+    const ref1 = useRef(null);
 
     useEffect(() => {
     if (ref.current) {
@@ -67,10 +68,26 @@ const App =()=>{
         },
         });
     }
+    if (ref1.current) {
+        gsap.from(ref1.current, {
+        opacity: 0,
+        x: -200,
+        duration: 2,
+        ease: 'power2.out',
+        scrollTrigger: {
+            trigger: ref1.current,
+            start: 'top 80%',
+            end: 'bottom 100%',
+            scrub: true,
+        },
+        });
+    }
     }, []);
+
+
     
     return(
-        <div ref={ref} className='projectContainer' id='Projects'
+        <div ref={ref1} className='projectContainer' id='Projects'
             style={{
                 background: color.blue[800],
                 color: color.blue[100]
@@ -80,7 +97,7 @@ const App =()=>{
                 <span style={{fontSize:'30px',color:color.gray[200],fontFamily:`'Fredoka One', cursive`}}>Latest projects</span>
                 </span>
             <div className='boxWrapper'>
-                <div className="projectsWrapper">
+                <div ref={ref}className="projectsWrapper">
                 <Proj title='Logo Design' date='7 March 2022' url={logo1}/>
                 <Proj title='Rental Car' date='4 March 2022' url={carRent1}/>
                 <Proj title='Real estate consultant' date='22 March 2021' url={HomeRentApp}/>
