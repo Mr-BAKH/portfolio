@@ -71,18 +71,19 @@ const App = ()=>{
     return(
        <div ref={ref} className="contactUsContainer">
             <img className="leftContainer" src={WritingImg} alt='image'/>
-            <form className="writeContainer"onSubmit={submithandler}>
+            {/* <form className="writeContainer"onSubmit={submithandler}>
                     <input className='inputSt' onChange={onchangeHandler} value={inp.name} name={"name"} type='text' placeholder='Enter your name'/>
                     <input className='inputSt' onChange={onchangeHandler} value={inp.phone} name={"phone"} type='tel' placeholder='Enter your phone'/>
                     <input className='inputSt' onChange={onchangeHandler} value={inp.email} name={"email"} type='email' placeholder='Enter your email'/>
                     <textarea className='inputSt'style={{height:'200px'}} onChange={onchangeHandler} value={inp.description} name={"description"} placeholder='Description...'/>
                     <button className="buttomform" style={{ background:color.blue[500]}} type='submit'>Send</button>
-            </form> 
+                </form>  */}
             <div className='abluteUs'>
                 <ProgCircle title="Projects" number={30}/>
                 <ProgCircle title="Houres" number={"50K"}/>
                 <ProgCircle title="Client" number={20}/>
                 <ProgCircle title="Years" number={4}/>
+                <a href="mailto:mr.bakh.usb@gmail.com"><button className="buttomform" style={{width:'300px',background:color.blue[500]}} type='submit'>Send Me Email</button></a>
             </div>
        </div>
                     

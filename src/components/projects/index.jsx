@@ -14,9 +14,11 @@ import JymApp from '../../assets/photo/projects/jymProject.jpg'
 import MusicApp from '../../assets/photo/projects/musicPlayer.jpg'
 import PersonalApp from '../../assets/photo/projects/personalWebsite.jpg'
 import VideoApp from '../../assets/photo/projects/videoPlayer.jpg'
+import logo1 from '../../assets/photo/projects/logo/logo1.jpg'
+import logo2 from '../../assets/photo/projects/logo/logo2.jpg'
+import logo3 from '../../assets/photo/projects/logo/logo3.jpg'
 
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import ChatIcon from '@mui/icons-material/Chat';
+
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import GradeIcon from '@mui/icons-material/Grade';
 
@@ -79,11 +81,14 @@ const App =()=>{
                 </span>
             <div className='boxWrapper'>
                 <div className="projectsWrapper">
+                <Proj title='Logo Design' date='7 March 2022' url={logo1}/>
                 <Proj title='Rental Car' date='4 March 2022' url={carRent1}/>
-                <Proj title='ChatApplication' date='10 Jun 2022' url={chatApp}/>
+                <Proj title='Real estate consultant' date='22 March 2021' url={HomeRentApp}/>
+                <Proj title='Logo Design' date='29 May 2022' url={logo3}/>
+                <Proj title='Logo Design' date='12 Jun 2022' url={logo2}/>
                 <Proj title='Cosmetics' date='2 January 2023' url={HealthApp}/>
                 <Proj title='Interior decoration' date='27 May 2022' url={HomeDecoraitonApp}/>
-                <Proj title='Real estate consultant' date='22 March 2021' url={HomeRentApp}/>
+                <Proj title='ChatApplication' date='10 Jun 2022' url={chatApp}/>
                 <Proj title='Sport Club' date='1 April 2021' url={JymApp}/>
                 <Proj title='Music Player' date='13 December 2021' url={MusicApp}/>
                 <Proj title='Personal Website' date='4 March 2021' url={PersonalApp}/>
