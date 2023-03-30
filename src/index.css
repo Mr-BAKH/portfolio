@@ -22,6 +22,11 @@ font-family: 'Titan One', cursive; */
   width: 0px;
 }
 
+body{
+  opacity:0;
+  animation: wellcome 2s 1s 1 forwards;
+}
+
 
 /* Track */
 ::-webkit-scrollbar-track {
