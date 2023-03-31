@@ -59,7 +59,7 @@
     background-color: #16272892;
     box-shadow: 0px 0px 5px #162728;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
     .icon{
         font-size: 20px !important;
     }
@@ -69,8 +69,10 @@
     .description{
         margin-right: 0 !important;
     }
+
     .mainPortfolio{
         border-bottom-left-radius: 70% !important;
+        align-items: start !important;
     }
     .imgHellow{
         margin-right: 0 !important;
@@ -80,11 +82,10 @@
 .mainPortfolio{
     width: 100%;
     position: relative;
-    min-height: calc(100vh - 60px);
+    min-height: 100vh;
     height: fit-content;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    align-items: center ;
     justify-content: center;
     border-bottom-left-radius: 50%;
     overflow: hidden;
