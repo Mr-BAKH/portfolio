@@ -18,11 +18,11 @@ const Screen = () => {
   useEffect(()=>{
     setTimeout(() => {
       setWelcome(0)
-    }, 500);
+    }, 3000);
   })
   if(welcome){
     return(
-      <Lottie animationData={Loading} loop={true} className='m-auto w-[250px] h-auto'/>
+      <Lottie animationData={Loading} loop={true} className='mt-[20vh] mx-auto w-[250px] h-auto'/>
       )
     }
   return(
