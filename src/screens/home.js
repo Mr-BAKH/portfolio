@@ -9,6 +9,7 @@ import ContactUs from "../components/contactus"
 import Footersite from "../components/footer"
 import Loading from '../assets/animation_ln8xif74.json'
 import Lottie from "lottie-react";
+import Ads from '../components/ads'
 
 import { useEffect,useState } from 'react';
 
@@ -18,7 +19,7 @@ const Screen = () => {
   useEffect(()=>{
     setTimeout(() => {
       setWelcome(0)
-    }, 3000);
+    }, 30);
   })
   if(welcome){
     return(
@@ -32,6 +33,7 @@ const Screen = () => {
       <Team/>
       <Comment/>
       <Certificate/>
+      <Ads/>
       <ContactUs/>
       <Footersite/>
    </div>

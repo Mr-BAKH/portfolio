@@ -26,7 +26,7 @@ let Proj = ({title,date,img,number})=>{
     }
   },[])
     return(
-        <div ref={ref} className='w-[400px] transition-all duration-300 ease-in flex backdrop-blur-lg justify-center bg-black/50 shadow-2xl shadow-sky-400 overflow-hidden  flex-col border-b-[10px] border-b-slate-50 rounded-[10px]'>
+        <div ref={ref} className='w-[300px] sm:w-[400px] transition-all duration-300 ease-in flex backdrop-blur-lg justify-center bg-black/50 shadow-2xl shadow-sky-400 overflow-hidden  flex-col border-b-[10px] border-b-slate-50 rounded-[10px]'>
           <img 
             className="w-full max-h-[70vh] object-contain"
             src={img}

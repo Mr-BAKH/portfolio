@@ -49,7 +49,7 @@ const App= ()=>{
             </p>
           </div>
           <img 
-            className='mr-[10px] h-[90vh] object-contain absolute bottom-0 sm:right-0' 
+            className='mr-[10px] sm:h-[90vh] h-[70] object-contain absolute bottom-0 sm:right-0' 
             src={localimage} alt="amirIage"
           />
         </div>
