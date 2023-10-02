@@ -28,10 +28,10 @@ const Certificate =({img,title})=>{
   }, []);
 
     return(
-        <div ref={ref} className='w-6/6 sm:w-[300px] bg-sky-100 h-[210px] flex mt-[20px] items-center justify-between relative shadow-md shadow-sky-700'
+        <div ref={ref} className='w-6/6 sm:w-[300px] bg-sky-100 h-fit flex mt-[20px] items-center justify-between relative shadow-xl shadow-sky-500'
         >
-          <sapn className='font-semibold text-center py-[5%] bg-black/50 w-full text-md text-slate-50 drop-shadow-lg tracking-wider shadow-sky-600 absolute bottom-0 backdrop-blur-sm'>{title}</sapn>
-         <img src={img} className='w-full h-full object-cover'/>
+          <span className='font-semibold text-center py-[5%] bg-black/50 w-full text-md text-slate-50 drop-shadow-lg tracking-wider shadow-sky-600 absolute bottom-0 backdrop-blur-sm'>{title}</span>
+         <img src={img} className='w-full h-fit object-cover'/>
         </div>
     )
 }

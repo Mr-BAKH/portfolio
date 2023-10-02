@@ -58,7 +58,6 @@ const CommentBox = ({image,name,comment,number})=>{
 
   gsap.registerPlugin(ScrollTrigger);
   const ref = useRef(null);
-  console.log(number)
 
   useEffect(() => {
       if (ref.current) {

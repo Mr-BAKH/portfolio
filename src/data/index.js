@@ -149,7 +149,7 @@ export const ourteam ={
         profImage: require("../assets/photo/p_bakhoda.png"),
         position:"Full Stack",
         skills:['HTML','CSS','JavaScript','React','ReactNative','Nextjs','Tailwind','Nodejs','Redux','Mogodb','Git','UI/X','Figma','AdobeXd'],
-        discription:"Hello, I have started my activity in the field of website design three years ago and completed a number of projects in this field, and some time ago I created a group with my friends that provides complete services from design to the final implementation of web projects. We present. In this field, we are learning and doing the project so that we can create a good result for you with the help of my friends.",
+        discription:"Hello, I started my activity in the field of website design three years ago and I have done many projects in this field, some time ago I created a group with my friends, from designing to the final implementation of a website, web application, and mobile application projects. And Logo provides full service. We provide In this field, we are learning and doing the project so that we can achieve a good result for you with the help of our friends.",
         certificates:[
             {
                 title:"React Advance",

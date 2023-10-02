@@ -54,7 +54,6 @@ const App = ()=>{
         });
     };
  
-    console.log(getWindowDimensions().width)
     }, []);
     
     return(
@@ -77,7 +76,7 @@ const App = ()=>{
           />
           <div 
             style={{gap:20}}
-            className="bg-slate-200 backdrop-blur-sm w-full flex flex-wrap items-center px-[30px] py-[10px] justify-center" 
+            className="bg-slate-200 backdrop-blur-sm w-full flex flex-wrap items-center px-[50px] py-[10px] justify-center" 
             ref={ref1} 
           >
             {
@@ -98,18 +97,16 @@ const App = ()=>{
     )
 }
 
-const TeamMemmber =({name,url,image,position})=>{
+const TeamMemmber =({name,image,position})=>{
 
     return(
         <div 
           className="text-gray-950 flex items-center justify-between flex-col rounded-[10px]"
         >
-          <a href={url}>
-            <img 
-              src={image}
-              className='w-[100px] h-[100px] rounded-[50%] shadow-sm'
-            />
-          </a>
+          <img 
+            src={image}
+            className='w-[100px] h-[100px] rounded-[50%] shadow-sm'
+          />
           <span className='mt-[5px] -tracking-tight  text-md drop-shadow-sm'>{name}</span>
           <span className='text-sm drop-shadow-sm font-bold'>{position}</span>
         </div> 
@@ -131,7 +128,7 @@ const DetailMemmber =({image,name,description,position,skills})=>{
           />   
           <div
             style={{gap:40}}
-            className="flex items-center justify-center flex-wrap w-[40%] min-w-[300px] p-[5px]"
+            className="flex items-center justify-center flex-wrap w-full py-[20px] sm:w-[40%] px-[60px]"
           >
             <div className='w-full flex flex-col items-start justify-center'>
               <span className='m-auto text-3xl flex flex-wrap'>{name}</span>
@@ -140,12 +137,12 @@ const DetailMemmber =({image,name,description,position,skills})=>{
             </div>
             <div 
               style={{gap:10}}
-              className="w-[450px] flex flex-row flex-wrap content-center  items-center justify-center"
+              className="w-full flex flex-row flex-wrap content-center  items-center justify-center"
             >
              {
                skills.map((item,i)=>{
                   return(
-                    <div key={item+i} className="p-[10px] rounded-md bg-black/10 flex">
+                    <div key={item+i} className="p-[10px] flex-grow justify-center items-center rounded-md bg-black/10 flex">
                         <WorkspacePremiumIcon className='text-sky-500'/>
                         <span className='text-center font-bold block text-sky-700 text-lg'>{item}</span>
                     </div>

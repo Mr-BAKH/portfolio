@@ -4,6 +4,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import HomeIcon from '@mui/icons-material/Home';
 import Cv from '../assets/pdf/CV_latest.pdf'
+import DownloadIcon from '@mui/icons-material/Download';
 
 import React from 'react';
 import localimage from '../assets/photo/img.png'
@@ -16,7 +17,7 @@ const App= ()=>{
     >
       <div
         style={{gap:10}}
-        className="bg-sky-900 text-gray-100 py-[15px] px-[20px] flex items-center flex-col sm:flex-row justify-between w-full text-[22px] font-bold overflow-hidden"  
+        className="bg-sky-900 text-gray-100 py-[15px] px-[20px] flex items-center flex-row justify-between w-full text-[22px] font-bold overflow-hidden"  
       >
         <span 
           className='text-md text-slate-300 text-center font-bolder'
@@ -29,7 +30,7 @@ const App= ()=>{
             target='_blank'
             download={Cv}
             className='px-[30px] bg-black/10 py-[10px] font-semibold hover:bg-sky-700 cursor-pointer text-md rounded-3xl'
-          >Download CV
+          >CV<DownloadIcon/>
           </a>
         </div>
       </div>
@@ -54,7 +55,7 @@ const App= ()=>{
         </div>
         <div 
           style={{gap:5}}
-          className="flex w-fit flex-col rounded-[10px] items-center justify-center p-[5px] py-[10px] fixed z-20 top-[50vh] left-[1vw] backdrop-blur-sm bg-black/50 shadow-xl shadow- shadow-white/10"
+          className="flex w-fit flex-col rounded-[10px] items-center justify-center p-[5px] py-[10px] fixed z-20 top-[50vh] left-[2vw] backdrop-blur-sm bg-black/50 shadow-xl shadow- shadow-black/10"
         >
           <a href="#home" className='cursor-pointer text-slate-300 hover:text-slate-50'><HomeIcon sx={{fontSize:35}}/></a>
           <a href="mailto:mr.bakh.usb@gmail.com" className='cursor-pointer text-slate-300 hover:text-slate-50'><EmailIcon sx={{fontSize:35}}/></a>
