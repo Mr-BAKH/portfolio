@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "./static/css/main.ac2d957f.css",
-    "main.js": "./static/js/main.c34388ff.js",
-    "static/media/me2.png": "./static/media/me2.e3f1725553a9c40c53f3.png",
+    "main.css": "./static/css/main.5fe7ef6a.css",
+    "main.js": "./static/js/main.1c697dde.js",
     "static/media/Gmail_icon_(2020).svg.png": "./static/media/Gmail_icon_(2020).svg.6a2dfabb1f8cbdb1cc7c.png",
     "static/media/CV_latest.pdf": "./static/media/CV_latest.7c55a01cf7cf218400e1.pdf",
+    "static/media/me2.png": "./static/media/me2.a4fe42e9a188fb3f111a.png",
     "static/media/img.png": "./static/media/img.9cad1b6a65692f700040.png",
     "static/media/org_bakhoda.png": "./static/media/org_bakhoda.8c70f938fdda04f945f5.png",
     "static/media/p_bakhoda.png": "./static/media/p_bakhoda.cdb647c889b31980326b.png",
@@ -47,11 +47,11 @@
     "static/media/girl4.jpg": "./static/media/girl4.b6c95ceee52add88f32a.jpg",
     "static/media/girl5.jpg": "./static/media/girl5.246fb8d49631e8cc4664.jpg",
     "index.html": "./index.html",
-    "main.ac2d957f.css.map": "./static/css/main.ac2d957f.css.map",
-    "main.c34388ff.js.map": "./static/js/main.c34388ff.js.map"
+    "main.5fe7ef6a.css.map": "./static/css/main.5fe7ef6a.css.map",
+    "main.1c697dde.js.map": "./static/js/main.1c697dde.js.map"
   },
   "entrypoints": [
-    "static/css/main.ac2d957f.css",
-    "static/js/main.c34388ff.js"
+    "static/css/main.5fe7ef6a.css",
+    "static/js/main.1c697dde.js"
   ]
 }
