@@ -1,8 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Titan+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Fredoka+One&family=Titan+One&display=swap');
-
 
 
 /* font-family: 'Caveat', cursive;
@@ -22,10 +25,10 @@ font-family: 'Titan One', cursive; */
   width: 0px;
 }
 
-body{
+/* body{
   opacity:0;
   animation: wellcome 2s 1s 1 forwards;
-}
+} */
 
 
 /* Track */
@@ -57,6 +60,7 @@ a{
   text-decoration: none;
   cursor: pointer;
 }
+/*
 
 @keyframes nextAne {
   0%{transform: translateY(50px);}
@@ -105,3 +109,5 @@ a{
   0%{}
   100%{ opacity: 1; left:50%;}
 }
+
+ */
