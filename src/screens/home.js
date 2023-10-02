@@ -19,7 +19,7 @@ const Screen = () => {
   useEffect(()=>{
     setTimeout(() => {
       setWelcome(0)
-    }, 30);
+    }, 3000);
   })
   if(welcome){
     return(
