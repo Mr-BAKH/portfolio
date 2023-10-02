@@ -16,12 +16,12 @@ const App = ()=>{
  if (ref.current) {
      gsap.from(ref.current, {
      opacity: 0,
-     y: 100,
-     duration: 2,
+     y: 200,
+     duration: 1,
      ease: 'power2.out',
      scrollTrigger: {
         trigger: ref.current,
-        start: 'top 90%',
+        start: 'top 100%',
         end: 'bottom 100%',
         scrub: true,
      },
@@ -30,9 +30,9 @@ const App = ()=>{
  if (ref1.current) {
      gsap.from(ref1.current, {
      opacity: 0,
-     y: 200,
+     y: 100,
      duration: 2,
-     ease: 'linear',
+     ease: 'power2.out',
      scrollTrigger: {
         trigger: ref1.current,
         start: 'top 90%',
@@ -41,29 +41,16 @@ const App = ()=>{
      },
      });
  }
- if (ref2.current) {
-     gsap.from(ref2.current, {
-     opacity: 0,
-     y: -500 ,
-     duration: 1,
-     ease: 'linear',
-     scrollTrigger: {
-        trigger: ref2.current,
-        start: 'top 150%',
-        end: 'bottom 100%',
-        scrub: true,
-     },
-     });
- }
+
  }, []);
     
     return(
-      <div className='w-full flex-col h-screen flex items-center justify-end relative'>
-        <img ref={ref} className="w-full drop-shadow-xl top-0 sm:w-[50vh] left-0 sm:absolute z-0 h-[90vh] sm:h-full object-right object-cover" src={WritingImg} alt='image'/>
-        <div 
+      <div ref={ref} className='w-full mt-[100px]  flex-col h-screen flex items-center justify-end relative'>
+        <img className="w-full sm:rounded-r-[10vh] drop-shadow-xl top-0 sm:w-[50vh] left-0 sm:absolute z-0 h-[90vh] sm:h-[80vh] object-right object-cover" src={WritingImg} alt='image'/>
+        <div
           ref={ref1} 
           style={{gap:15}}
-          className='flex -mt-10 mb-10 w-11/12 shadow-lg shadow-purple-400 p-5  backdrop-blur-sm bg-slate-900 rounded-3xl justify-center items-center flex-row flex-wrap'
+          className='flex mb-[10vh] w-11/12 shadow-lg shadow-purple-400 p-5  backdrop-blur-sm bg-slate-900 rounded-3xl justify-center items-center flex-row flex-wrap'
         >
           <Contact href={'https://telegram.dog/Mrbakh2'} img={require('../assets/photo/logo/Telegram_2019_Logo.svg.png')}/>
           <Contact href={'https://github.com/Mr-BAKH'} img={require('../assets/photo/logo/1_wotzQboYWAfaj-7bvGNIkQ.png')}/>
@@ -71,7 +58,7 @@ const App = ()=>{
           <Contact href={'https://api.whatsapp.com/send?text=hello mrbakh my name is &phone=989154968488'} img={require('../assets/photo/logo/pngtree-whatsapp-mobile-software-icon-png-image_6315991.png')}/>
           <Contact href={'https://www.linkedin.com/in/amirhosseinbakhoda'} img={require('../assets/photo/logo/Linkedin-Logo1.png')}/>
         </div>
-        <div ref={ref2} className="w-full top-0 absolute -z-10 shadow-2xl h-full ">
+        <div className="w-full  top-0 absolute -z-10 shadow-2xl h-full ">
          <Ads/>
         </div>
       </div>

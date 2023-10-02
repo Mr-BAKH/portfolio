@@ -7,11 +7,26 @@ import Comment from "../components/comment";
 import Certificate from "../components/certificate"
 import ContactUs from "../components/contactus"
 import Footersite from "../components/footer"
+import Loading from '../assets/animation_ln8xif74.json'
+import Lottie from "lottie-react";
+
+import { useEffect,useState } from 'react';
 
 
 const Screen = () => {
-  return (
-    <div className='w-full overflow-hidden'>
+  const  [welcome,setWelcome] = useState(1)
+  useEffect(()=>{
+    setTimeout(() => {
+      setWelcome(0)
+    }, 500);
+  })
+  if(welcome){
+    return(
+      <Lottie animationData={Loading} loop={true} className='m-auto w-[250px] h-auto'/>
+      )
+    }
+  return(
+    <div className='w-full animate-open overflow-hidden transition-all duration-100'>
       <Home/>
       <Proj/>
       <Team/>

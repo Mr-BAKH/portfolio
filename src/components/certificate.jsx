@@ -62,7 +62,7 @@ const App =()=>{
  }, []);
 
     return(
-        <div ref={ref}  className='w-full sm:w-5/6 m-auto mt-[100px] min-h-[500px] py-[1vw]' id="certificate">
+        <div ref={ref} className='w-full rounded-b-[10vh] bg-transparent sm:w-5/6 m-auto mt-[100px] min-h-[500px] py-[1vw]' id="certificate">
                 <h1
                   className='text-center text-3xl text-sky-600 '
                   style={{fontFamily:`'Fredoka One', cursive`}}
