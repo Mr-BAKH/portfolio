@@ -27,10 +27,13 @@ let Proj = ({title,date,img,number})=>{
   },[])
     return(
         <div ref={ref} className='w-[300px] sm:w-[400px] transition-all duration-300 ease-in flex backdrop-blur-lg justify-center bg-black/50 shadow-2xl shadow-sky-400 overflow-hidden  flex-col border-b-[10px] border-b-slate-50 rounded-[10px]'>
-          <img 
-            className="w-full max-h-[70vh] object-contain"
-            src={img}
-          />
+          {
+            img &&
+            <img 
+              className="w-full max-h-[70vh] object-contain"
+              src={img}
+            />
+          }
           <div className=" w-full text-slate-50 p-[10px]  bg-black  flex flex-col items-center text-lg ">
             <span className='text-md'>{title}</span>
             <span className='text-sm'>{date}</span>
@@ -46,6 +49,7 @@ const App =()=>{
 
   const [activeType,setActiveType] = useState('Website')
   const type = ['MobileApp','Website','Logo']
+  const [proj, setProj] = useState(project)
     
   const ref = useRef(null);
   gsap.registerPlugin(ScrollTrigger);
@@ -108,17 +112,17 @@ const App =()=>{
                 className="w-fit m-auto px-[50px] flex h-full justify-center content-center flex-row items-center"
               >
               {
-                 project[activeType].map((item,index)=>{
+                 proj[activeType].map((item,index)=>{
                     return(
-                        <Proj 
-                          key={item.img+index} 
-                          number={index}
-                          title={item.title} 
-                          date={item.date} 
-                          img={item.img}
-                        />
-                    )
-                })
+                      <Proj 
+                      key={item.img+index} 
+                      number={index}
+                      title={item.title} 
+                      date={item.date} 
+                      img={item.img}
+                      />
+                      )
+                    })
               }
               </div>
             </div>

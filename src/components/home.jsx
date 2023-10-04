@@ -6,10 +6,18 @@ import HomeIcon from '@mui/icons-material/Home';
 import Cv from '../assets/pdf/CV_latest.pdf'
 import DownloadIcon from '@mui/icons-material/Download';
 
-import React from 'react';
+import React,{useEffect, useState} from 'react';
 import localimage from '../assets/photo/img.png'
+// import localimage from '../assets/photo/test.png'
 
 const App= ()=>{
+
+  const [img51,set51] = useState(false)
+
+  useEffect(()=>{
+    <img src={localimage} onLoad={set51(true)}/>
+  },[])
+
     return(
     <div 
       className="w-full h-screen pb-[20px] overflow-hidden" 
@@ -50,7 +58,7 @@ const App= ()=>{
           </div>
           <img 
             className='mr-[10px] sm:h-[90vh] h-[70] object-contain absolute bottom-0 sm:right-0' 
-            src={localimage} alt="amirIage"
+            src={img51?localimage:null} alt="amirIage"
           />
         </div>
         <div 

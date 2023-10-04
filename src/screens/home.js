@@ -21,7 +21,7 @@ const Screen = () => {
       setWelcome(0)
     }, 3000);
   })
-  if(welcome){
+  if(0){
     return(
       <Lottie animationData={Loading} loop={true} className='mt-[20vh] mx-auto w-[250px] h-auto'/>
       )
