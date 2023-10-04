@@ -1,7 +1,7 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-import React,{useRef, useEffect} from "react"
+import React,{useRef,useState, useEffect} from "react"
 import {comment} from '../data/index'
 
 

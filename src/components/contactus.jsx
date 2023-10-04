@@ -2,7 +2,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import {gsap} from 'gsap'
 
 import WritingImg from '../assets/photo/me2.png'
-import React,{useRef , useEffect } from "react"
+import React,{useRef,useState , useEffect } from "react"
 
 const App = ()=>{
 
