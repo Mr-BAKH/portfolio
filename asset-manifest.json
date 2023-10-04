@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.d8ce8442.css",
-    "main.js": "./static/js/main.8e5c1944.js",
+    "main.css": "./static/css/main.eeb2e459.css",
+    "main.js": "./static/js/main.da035332.js",
     "static/media/Gmail_icon_(2020).svg.png": "./static/media/Gmail_icon_(2020).svg.6a2dfabb1f8cbdb1cc7c.png",
     "static/media/CV_latest.pdf": "./static/media/CV_latest.7c55a01cf7cf218400e1.pdf",
     "static/media/me2.png": "./static/media/me2.b8a7979bac9177dbe2ae.png",
@@ -47,11 +47,11 @@
     "static/media/girl4.jpg": "./static/media/girl4.b6c95ceee52add88f32a.jpg",
     "static/media/girl5.jpg": "./static/media/girl5.246fb8d49631e8cc4664.jpg",
     "index.html": "./index.html",
-    "main.d8ce8442.css.map": "./static/css/main.d8ce8442.css.map",
-    "main.8e5c1944.js.map": "./static/js/main.8e5c1944.js.map"
+    "main.eeb2e459.css.map": "./static/css/main.eeb2e459.css.map",
+    "main.da035332.js.map": "./static/js/main.da035332.js.map"
   },
   "entrypoints": [
-    "static/css/main.d8ce8442.css",
-    "static/js/main.8e5c1944.js"
+    "static/css/main.eeb2e459.css",
+    "static/js/main.da035332.js"
   ]
 }
