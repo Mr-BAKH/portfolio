@@ -6,6 +6,8 @@ import React,{useRef , useEffect, useState } from "react"
 
 
 let Proj = ({title,date,img,number})=>{
+
+  const [img40,set40] = useState('blur-lg')
   const ref = useRef(null);
   gsap.registerPlugin(ScrollTrigger);
   
@@ -27,13 +29,11 @@ let Proj = ({title,date,img,number})=>{
   },[])
     return(
         <div ref={ref} className='w-[300px] sm:w-[400px] transition-all duration-300 ease-in flex backdrop-blur-lg justify-center bg-black/50 shadow-2xl shadow-sky-400 overflow-hidden  flex-col border-b-[10px] border-b-slate-50 rounded-[10px]'>
-          {
-            img &&
             <img 
-              className="w-full max-h-[70vh] object-contain"
+              className={`w-full max-h-[70vh] object-contain ${img40}`}
               src={img}
+              onLoad={()=>set40('')}
             />
-          }
           <div className=" w-full text-slate-50 p-[10px]  bg-black  flex flex-col items-center text-lg ">
             <span className='text-md'>{title}</span>
             <span className='text-sm'>{date}</span>

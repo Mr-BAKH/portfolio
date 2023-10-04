@@ -12,11 +12,8 @@ import localimage from '../assets/photo/img.png'
 
 const App= ()=>{
 
-  const [img51,set51] = useState(false)
+  const [img51,set51] = useState('blur-lg')
 
-  useEffect(()=>{
-    <img src={localimage} onLoad={set51(true)}/>
-  },[])
 
     return(
     <div 
@@ -56,10 +53,11 @@ const App= ()=>{
               Our team can provide you with various services in the field of WebSite, web application, Mobile Application, and Logo design. You can visit our team and the work we have done so far.
             </p>
           </div>
-          <img 
-            className='mr-[10px] sm:h-[90vh] h-[70] object-contain absolute bottom-0 sm:right-0' 
-            src={img51?localimage:null} alt="amirIage"
-          />
+            <img 
+              className={`${img51} mr-[10px] sm:h-[90vh] h-[70] object-contain absolute bottom-0 sm:right-0 `} 
+              src={localimage} alt="amirIage"
+              onLoad={()=> set51('')}
+            />
         </div>
         <div 
           style={{gap:5}}
