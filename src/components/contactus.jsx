@@ -9,6 +9,8 @@ const App = ()=>{
     gsap.registerPlugin(ScrollTrigger);
     const ref = useRef(null);
     const ref1 = useRef(null);
+    const [img40,set40] = useState('blur-lg')
+
 
  useEffect(() => {
  if (ref.current) {
@@ -44,7 +46,9 @@ const App = ()=>{
     
     return(
       <div ref={ref} className='w-full -mt-[40vh] mb-[5vh] sm:-mt-[100vh]  flex-col h-screen flex items-center justify-end relative'>
-        <img className="w-full sm:rounded-t-none sm:rounded-r-[10vh] drop-shadow-xl top-0 sm:w-[50vh] left-0 sm:absolute z-0 h-[100vh] sm:h-[80vh] object-right object-cover" src={WritingImg} alt='image'/>
+        <img 
+          onLoad={()=> set40('')}
+          className={`${img40} w-full sm:rounded-t-none sm:rounded-r-[10vh] drop-shadow-xl top-0 sm:w-[50vh] left-0 sm:absolute z-0 h-[100vh] sm:h-[80vh] object-right object-cover`} src={WritingImg} alt='image'/>
         <div
           ref={ref1} 
           style={{gap:15}}

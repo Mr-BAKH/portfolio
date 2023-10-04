@@ -8,11 +8,10 @@ import DownloadIcon from '@mui/icons-material/Download';
 
 import React,{useEffect, useState} from 'react';
 import localimage from '../assets/photo/img.png'
-// import localimage from '../assets/photo/test.png'
 
 const App= ()=>{
 
-  const [img51,set51] = useState('blur-lg')
+  const [img40,set40] = useState('blur-lg')
 
 
     return(
@@ -54,9 +53,9 @@ const App= ()=>{
             </p>
           </div>
             <img 
-              className={`${img51} mr-[10px] sm:h-[90vh] h-[70] object-contain absolute bottom-0 sm:right-0 `} 
+              className={`${img40} mr-[10px] sm:h-[90vh] h-[70] object-contain absolute bottom-0 sm:right-0 `} 
               src={localimage} alt="amirIage"
-              onLoad={()=> set51('')}
+              onLoad={()=> set40('')}
             />
         </div>
         <div 

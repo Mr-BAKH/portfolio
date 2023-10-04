@@ -56,6 +56,8 @@ const App =()=>{
 
 const CommentBox = ({image,name,comment,number})=>{
 
+  const [img40,set40] = useState('blur-lg')
+
   gsap.registerPlugin(ScrollTrigger);
   const ref = useRef(null);
 
@@ -79,7 +81,8 @@ const CommentBox = ({image,name,comment,number})=>{
   return(
       <div ref={ref} className="shadow-2xl transition-all duration-150 ease-in py-[40px]  shadow-orange-600  flex min-w-[300px] max-h-[500px] flex-col items-center justify-start p-[5px] rounded-[10px] m-[10px] text-justify border-[2px] border-slate-50" >
           <img
-            className="mb-[10px] sha w-[150px] h-[150px] sm:w-[200px] object-cover sm:h-[200px] rounded-[50%] block shadow-lg shadow-orange-600/80 border-orange-600 border-[5px]"
+            onLoad={()=>set40('')}
+            className={`${img40} mb-[10px] sha w-[150px] h-[150px] sm:w-[200px] object-cover sm:h-[200px] rounded-[50%] block shadow-lg shadow-orange-600/80 border-orange-600 border-[5px]`}
             src={image}
           />
           <h4

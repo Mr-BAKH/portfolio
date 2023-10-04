@@ -15,17 +15,7 @@ import { useEffect,useState } from 'react';
 
 
 const Screen = () => {
-  const  [welcome,setWelcome] = useState(1)
-  useEffect(()=>{
-    setTimeout(() => {
-      setWelcome(0)
-    }, 3000);
-  })
-  if(0){
-    return(
-      <Lottie animationData={Loading} loop={true} className='mt-[20vh] mx-auto w-[250px] h-auto'/>
-      )
-    }
+ 
   return(
     <div className='w-full animate-open overflow-hidden transition-all duration-100'>
       <Home/>

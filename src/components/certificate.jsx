@@ -6,6 +6,9 @@ import { ourteam } from '../data'
 
 
 const Certificate =({img,title})=>{
+
+  const [img40,set40] = useState('blur-lg')
+
   gsap.registerPlugin(ScrollTrigger);
   const ref = useRef(null);
  
@@ -31,7 +34,7 @@ const Certificate =({img,title})=>{
         <div ref={ref} className='w-6/6 sm:w-[300px] bg-sky-100 h-fit flex mt-[20px] items-center justify-between relative shadow-xl shadow-sky-500'
         >
           <span className='font-semibold text-center py-[5%] bg-black/50 w-full text-md text-slate-50 drop-shadow-lg tracking-wider shadow-sky-600 absolute bottom-0 backdrop-blur-sm'>{title}</span>
-         <img src={img} className='w-full h-fit object-cover'/>
+         <img onLoad={()=>set40('')} src={img} className={`${img40} w-full h-fit object-cover`}/>
         </div>
     )
 }

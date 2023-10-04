@@ -98,6 +98,7 @@ const App = ()=>{
 }
 
 const TeamMemmber =({name,image,position})=>{
+  const [img40,set40] = useState('blur-lg')
 
     return(
         <div 
@@ -105,7 +106,8 @@ const TeamMemmber =({name,image,position})=>{
         >
           <img 
             src={image}
-            className='w-[100px] h-[100px] rounded-[50%] shadow-sm'
+            onLoad={()=> set40('')}
+            className={`${img40} w-[100px] h-[100px] rounded-[50%] shadow-sm`}
           />
           <span className='mt-[5px] -tracking-tight  text-md drop-shadow-sm'>{name}</span>
           <span className='text-sm drop-shadow-sm font-bold'>{position}</span>
@@ -115,15 +117,16 @@ const TeamMemmber =({name,image,position})=>{
 
 
 const DetailMemmber =({image,name,description,position,skills})=>{
-    
+  const [img40,set40] = useState('blur-lg')
     return(
         <div 
           style={{gap:'10vw'}}
           className="w-full mt-[100px] flex flex-wrap items-center justify-center"
         >
           <img
-            className=' bg-sky-200 border-b-[10px] w-[30vw] h-[40vw] min-w-[300px] min-h-[400px] object-cover rounded-br-[70%] rounded-bl-[100%]'
+            className={`${img40} bg-sky-200 border-b-[10px] w-[30vw] h-[40vw] min-w-[300px] min-h-[400px] object-cover rounded-br-[70%] rounded-bl-[100%]`}
             src={image} 
+            onLoad={()=> set40('')}
             alt="profile"
           />   
           <div
